@@ -1,0 +1,43 @@
+.match-info {
+  &__header {
+    display: flex;
+
+    padding: 22px 0;
+
+    align-items: flex-end;
+    justify-content: space-between;
+    h1 {
+      font-family: $Semibold;
+      font-size: rem-calc(30);
+      font-weight: normal;
+
+      margin: 0;
+    }
+  }
+}
+
+.match-info-nav {
+  &__item {
+    font-size: rem-calc(14);
+
+    margin: 0 15px;
+
+    text-decoration: none;
+
+    color: $link;
+    border-bottom: 1px solid rgba($link, .5);
+
+    @include transition;
+    &:hover {
+      cursor: pointer;
+
+      border-bottom-color: $link;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

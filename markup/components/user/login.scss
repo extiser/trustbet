@@ -1,0 +1,40 @@
+.login {
+  &__btn {
+    font-size: rem-calc(14);
+    line-height: 34px;
+
+    position: relative;
+
+    display: block;
+
+    box-sizing: border-box;
+    max-width: 90px;
+    height: 34px;
+    padding-right: 16px;
+    padding-left: 34px;
+
+    text-decoration: none;
+
+    color: $white;
+    border-radius: 3px;
+    background: $orange;
+
+    @include transition;
+    &:before {
+      left: 10px;
+
+      content: "";
+
+      @include vertical-center;
+      @include bg($key);
+    }
+    &:visited {
+      color: $white;
+    }
+    &:hover {
+      cursor: pointer;
+
+      background: $orange + #111;
+    }
+  }
+}

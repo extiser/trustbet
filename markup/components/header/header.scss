@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+
+  background: $blue;
+  &__wrapper {
+    display: flex;
+
+    align-items: center;
+    @extend .wrapper;
+    justify-content: space-between;
+  }
+}

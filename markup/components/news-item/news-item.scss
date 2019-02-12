@@ -1,0 +1,31 @@
+.news-item {
+  display: flex;
+
+  width: 100%;
+  max-width: 28%;
+  padding-bottom: 20px;
+
+  border-bottom: 1px dashed #e0e0e0;
+
+  align-items: flex-start;
+  justify-content: flex-start;
+  &__time {
+    font-family: $Bold;
+    font-size: rem-calc(14);
+
+    position: relative;
+    top: 3px;
+
+    margin-right: 28px;
+
+    color: $link;
+  }
+  &__title {
+    font-size: rem-calc(14);
+    line-height: rem-calc(22);
+
+    text-decoration: none;
+
+    color: $black;
+  }
+}

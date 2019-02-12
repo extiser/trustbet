@@ -1,0 +1,26 @@
+html,
+body {
+  font-family: $Regular;
+
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+
+  align-items: stretch;
+  @extend .wrapper;
+  justify-content: space-between;
+  &__layout {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1216px;
+    padding: 22px 0 22px 32px;
+  }
+}

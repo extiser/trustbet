@@ -1,0 +1,51 @@
+.about-match {
+  padding-top: 22px;
+  &__layout {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__image {
+    margin-right: 32px;
+  }
+  &__content {
+    p {
+      font-size: rem-calc(14);
+      line-height: 22px;
+
+      margin-top: 5px;
+      margin-bottom: 10px;
+
+      color: $black;
+    }
+  }
+  &__more {
+    font-size: rem-calc(14);
+
+    position: relative;
+
+    display: inline-block;
+
+    padding-right: 20px;
+
+    text-decoration: none;
+
+    color: $link;
+    &:after {
+      right: 0;
+
+      content: "";
+
+      @include vertical-center;
+      @include bg($more);
+    }
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  &__hidden {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+include ../prediction-item/prediction-item
+
+mixin match-prediction(data)
+  .match-prediction#prediction
+    h2.title._h2 Прогнозы
+    
+    .match-prediction__content
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/1.jpg', title: '«Вольфсбург» – «Штутгарт»: прогноз'};
+      +prediction-item(data)
+
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/2.jpg', title: '«Вольфсбург» – «Штутгарт»: прогноз'};
+      +prediction-item(data)
+
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/3.jpg', title: '«Вольфсбург» – «Штутгарт»: прогноз'};
+      +prediction-item(data)
+
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/4.jpg', title: '«Вольфсбург» – «Штутгарт»: прогноз'};
+      +prediction-item(data)
+
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/5.jpg', title: '«Вольфсбург» – «Штутгарт»: прогноз'};
+      +prediction-item(data)

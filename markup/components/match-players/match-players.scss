@@ -1,0 +1,82 @@
+.match-players {
+  padding-top: 50px;
+
+  &__section {
+    display: flex;
+
+    padding-bottom: 50px;
+
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__table {
+    overflow: hidden;
+
+    width: 100%;
+    max-width: 48%;
+
+    border-radius: 3px;
+
+    table {
+      width: 100%;
+
+      thead {
+        tr {
+          background: $gray;
+
+          th {
+            font-size: rem-calc(14);
+            font-weight: normal;
+
+            padding: 6px 0;
+
+            text-align: left;
+            text-align: center;
+
+            color: #9b9b9b;
+            &:first-child {
+              text-align: center;
+            }
+            &:nth-child(2) {
+              text-align: left;
+            }
+            strong {
+              font-family: $Semibold;
+              font-size: rem-calc(16);
+
+              color: $blue;
+            }
+            img {
+              display: block;
+
+              margin: auto;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          border-bottom: 1px solid #f3f3f3;
+          td {
+            font-size: rem-calc(14);
+
+            padding: 10px 0;
+
+            text-align: center;
+
+            color: $black;
+            background: #f9f9f9;
+            &:nth-child(2) {
+              text-align: left;
+            }
+            span {
+              text-transform: uppercase;
+
+              color: #8d98a5;
+            }
+          }
+        }
+      }
+    }
+  }
+}

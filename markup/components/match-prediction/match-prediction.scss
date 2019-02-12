@@ -1,0 +1,9 @@
+.match-prediction {
+  padding-top: 22px;
+  &__content {
+    display: flex;
+
+    align-items: stretch;
+    justify-content: space-between;
+  }
+}

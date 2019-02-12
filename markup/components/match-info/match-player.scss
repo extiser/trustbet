@@ -1,0 +1,60 @@
+.match-player {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 39%;
+
+  justify-content: center;
+  &__header {
+    box-sizing: border-box;
+    min-height: 274px;
+    padding: 46px 0 36px;
+
+    text-align: center;
+
+    background-color: $gray;
+  }
+  &__logo {
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-family: $Bold;
+    font-size: rem-calc(21);
+
+    color: $blue;
+  }
+  &__table {
+    padding: 20px 28px 20px 18px;
+
+    background: #f9f9f9;
+    table {
+      box-sizing: border-box;
+      width: 100%;
+      thead {
+        tr {
+          th {
+            font-size: rem-calc(14);
+
+            padding-right: 16px;
+            padding-bottom: 4px;
+
+            text-align: left;
+            text-transform: uppercase;
+
+            color: #8d98a5;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            font-size: rem-calc(14);
+
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}

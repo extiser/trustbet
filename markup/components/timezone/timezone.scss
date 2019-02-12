@@ -1,0 +1,96 @@
+.timezone {
+  width: 100%;
+  max-width: 126px;
+}
+
+.timezone-select {
+  position: relative;
+
+  width: 100%;
+
+  cursor: pointer;
+
+  border: 1px solid #464f5c;
+  border-radius: 3px;
+  &:after {
+    right: 6px;
+
+    content: "";
+
+    @include vertical-center;
+    @include bg($timezone-dropdown);
+  }
+  &__visible {
+    position: relative;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+
+    background: transparent;
+
+    @include transition;
+  }
+  &__choosen {
+    font-size: rem-calc(14);
+
+    padding-left: 12px;
+
+    color: #767e89;
+
+    @include vertical-center;
+    span {
+      color: $white;
+    }
+  }
+  &__dropdown {
+    font-size: rem-calc(14);
+
+    position: absolute;
+    z-index: 10;
+    top: 34px;
+
+    display: none;
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 12px;
+
+    color: #767e89;
+    border: 1px solid #464f5c;
+    background: $blue;
+    span {
+      color: $white;
+    }
+  }
+  &__overflow {
+    overflow-y: scroll;
+
+    width: 110%;
+    height: 240px;
+  }
+  &__option {
+    line-height: 34px;
+
+    position: relative;
+
+    height: 34px;
+
+    cursor: pointer;
+
+    &:first-child {
+      border-top: 1px solid rgba(#cfd0d6, .2);
+    }
+    &:hover {
+      background: rgba(#cfd0d6, .2);
+    }
+    &:before {
+      left: 30px;
+
+      content: "";
+
+      @include vertical-center;
+    }
+  }
+}

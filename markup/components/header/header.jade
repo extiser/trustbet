@@ -1,0 +1,14 @@
+include ../logo/logo
+include ../menu/menu
+include ../search/search
+include ../timezone/timezone
+include ../user/user
+
+mixin header(data)
+  header.header
+    .header__wrapper
+      +logo
+      +menu
+      +search
+      +timezone
+      +user-login

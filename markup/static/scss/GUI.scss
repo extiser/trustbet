@@ -1,0 +1,78 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.dot {
+  display: inline-block;
+
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+
+  vertical-align: middle;
+
+  border-radius: 50%;
+  &:last-child {
+    margin-right: 0;
+  }
+  &._red {
+    background-color: $red;
+  }
+  &._green {
+    background-color: $green;
+  }
+  &._yellow {
+    background-color: $yellow;
+  }
+}
+
+.title {
+  &._h2 {
+    font-family: $Bold;
+    font-size: rem-calc(16);
+
+    margin-top: 0;
+    margin-bottom: 18px;
+
+    text-transform: uppercase;
+
+    color: $blue;
+  }
+  span {
+    color: $link;
+  }
+}
+
+table,
+img {
+  border-radius: 3px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.number {
+  font-size: rem-calc(14);
+  line-height: 30px;
+
+  width: 30px;
+  height: 30px;
+  margin: auto;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: $white;
+  border-radius: 50%;
+  &._green {
+    background: $green;
+  }
+  &._gray {
+    background: #778495;
+  }
+  &._white {
+    color: #778495;
+    border: 1px solid #778495;
+  }
+}

@@ -1,0 +1,13 @@
+.slogan {
+  font-family: $Semibold;
+  font-size: rem-calc(10);
+
+  position: relative;
+
+  padding: 14px 44px 14px 14px;
+
+  text-transform: uppercase;
+
+  color: $white;
+  background: linear-gradient(to right, #778495, #627082);
+}

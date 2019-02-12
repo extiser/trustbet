@@ -1,0 +1,11 @@
+.filter {
+  &__item {
+    font-size: rem-calc(14);
+
+    padding-left: 33px;
+
+    text-decoration: none;
+
+    color: $white;
+  }
+}

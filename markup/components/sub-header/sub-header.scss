@@ -1,0 +1,14 @@
+.sub-header {
+  position: relative;
+
+  background: #778495;
+  
+  &__wrapper {
+    display: flex;
+
+
+    align-items: center;
+    @extend .wrapper;
+    justify-content: flex-start;
+  }
+}

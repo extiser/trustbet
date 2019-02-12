@@ -1,0 +1,41 @@
+.menu {
+  &__mobile {
+    display: none;
+    @media sreen and (max-width: 760px) {
+      display: block;
+    }
+  }
+  &__list {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__item {
+    font-family: $Semibold;
+    font-size: rem-calc(15);
+
+    display: block;
+
+    box-sizing: border-box;
+    padding: 28px 31px 29px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: $white;
+    border-top: 2px solid transparent;
+    border-right: 1px solid #293445;
+
+    @include transition;
+    &._active {
+      border-top: 2px solid $green;
+      background: #313d4f;
+    }
+    &:hover {
+      cursor: pointer;
+
+      border-top: 2px solid $green;
+    }
+  }
+}

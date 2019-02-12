@@ -1,0 +1,107 @@
+.match-group {
+  display: flex;
+
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.match-group-info {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 22%;
+  padding: 0 29px;
+
+  text-align: center;
+
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid #f9f9f9;
+  &__league {
+    font-size: rem-calc(14);
+
+    padding: 15px 0 14px;
+
+    border-bottom: 1px solid $gray;
+    img {
+      display: inline-block;
+
+      margin-right: 6px;
+
+      vertical-align: middle;
+    }
+  }
+  &__title {
+    font-size: rem-calc(14);
+
+    text-transform: uppercase;
+
+    color: #778495;
+    span {
+      display: block;
+
+      padding-top: 3px;
+
+      text-transform: none;
+
+      color: $black;
+    }
+  }
+  &__start {
+    padding-top: 18px;
+    padding-bottom: 13px;
+
+    border-bottom: 1px solid $gray;
+  }
+  &__date {
+    font-size: rem-calc(20);
+    line-height: 38px;
+
+    position: relative;
+
+    height: 38px;
+    margin: 12px 14px 10px;
+
+    color: $white;
+    background-color: #778495;
+    &:before,
+    &:after {
+      position: absolute;
+      top: 0;
+
+      display: block;
+
+      width: 0;
+      height: 0;
+
+      content: "";
+    }
+    &:before {
+      left: -14px;
+
+      border-top: 19px solid transparent;
+      border-right: 14px solid #778495;
+      border-bottom: 19px solid transparent;
+    }
+    &:after {
+      right: -14px;
+
+      border-top: 19px solid transparent;
+      border-bottom: 19px solid transparent;
+      border-left: 14px solid #778495;
+    }
+  }
+  &__time {
+    font-family: $Bold;
+    font-size: rem-calc(31);
+
+    color: $green;
+  }
+  &__stadium {
+    padding-top: 17px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid $gray;
+  }
+  &__judge {
+    padding-top: 17px;
+  }
+}

@@ -1,0 +1,11 @@
+.match-news {
+  padding-top: 50px;
+  &__list {
+    display: flex;
+
+    margin-top: 20px;
+
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}

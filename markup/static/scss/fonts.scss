@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "OpenSans-Regular";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/OpenSans-Regular.woff") format("woff"),
+       url("../fonts/OpenSans-Regular.ttf")  format("truetype"), 
+       url("../fonts/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/OpenSans-SemiBold.woff") format("woff"),
+       url("../fonts/OpenSans-SemiBold.ttf")  format("truetype"), 
+       url("../fonts/OpenSans-SemiBold.svg#OpenSans-SemiBold") format("svg");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/OpenSans-Bold.woff") format("woff"),
+       url("../fonts/OpenSans-Bold.ttf")  format("truetype"), 
+       url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+}
+
+$Regular: "OpenSans-Regular";
+$Semibold: "OpenSans-Semibold";
+$Bold: "OpenSans-Bold";

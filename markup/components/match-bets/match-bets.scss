@@ -1,0 +1,65 @@
+.match-bets {
+  padding-top: 22px;
+  &__table {
+    table {
+      width: 100%;
+
+      border-spacing: 0;
+      border-collapse: collapse;
+
+      border: 1px solid $gray;
+      thead {
+        tr {
+          th {
+            padding: 12px 0 10px;
+            &:nth-child(odd) {
+              background-color: $gray;
+            }
+            &:nth-child(even) {
+              background-color: #f9f9f9;
+            }
+            img {
+              display: block;
+
+              margin: auto;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            font-size: rem-calc(14);
+
+            padding: 15px 0;
+
+            text-align: center;
+
+            border: 1px solid $gray;
+            a {
+              text-decoration: none;
+
+              color: $link;
+              &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+              }
+            }
+            &:first-child {
+              font-family: $Semibold;
+              font-size: rem-calc(13);
+
+              text-align: center;
+
+              color: #9b9b9b;
+              background-color: #f6f6f6;
+            }
+            &:nth-child(odd) {
+              background-color: #f9f9f9;
+            }
+          }
+        }
+      }
+    }
+  }
+}
