@@ -1,0 +1,28 @@
+.school-item {
+  display: flex;
+
+  width: 100%;
+
+  border-bottom: 1px dashed #e0e0e0;
+
+  align-items: center;
+  justify-content: flex-start;
+  &._main {
+    padding: 20px;
+    padding-left: 0;
+  }
+  &__image {
+    margin-right: 30px;
+  }
+  &__title {
+    font-size: rem-calc(16);
+    line-height: rem-calc(22);
+
+    text-decoration: none;
+
+    color: $black;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,1 +1,17 @@
 extend ./layout
+
+include ../components/match-list/match-list
+include ../components/bookmaker-rating/bookmaker-rating
+include ../components/news-list/news-list
+include ../components/prediction-list/prediction-list
+include ../components/school-list/school-list
+
+block content
+  .sided
+    .sided__left
+      +match-list
+      +prediction-list
+    .sided__right
+      +bookmaker-rating
+      +news-list
+      +school-list

@@ -1,0 +1,32 @@
+include ../school-item/school-item
+
+mixin school-list(data)
+  .school-list
+    .school-list__title школа ставок
+
+    .school-list__content
+      - var data = {imageSrc: '%=static=%images/assets/school-item/1.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед" 3:1 (Видео)'};
+      +school-item(data)._main
+      
+      - var data = {imageSrc: '%=static=%images/assets/school-item/2.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед" 3:1 (Видео)'};
+      +school-item(data)._main
+
+      - var data = {imageSrc: '%=static=%images/assets/school-item/3.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед" 3:1 (Видео)'};
+      +school-item(data)._main
+      
+      - var data = {imageSrc: '%=static=%images/assets/school-item/4.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед" 3:1 (Видео)'};
+      +school-item(data)._main
+      
+      - var data = {imageSrc: '%=static=%images/assets/school-item/5.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед" 3:1 (Видео)'};
+      +school-item(data)._main
+      
+      - var data = {imageSrc: '%=static=%images/assets/school-item/6.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед" 3:1 (Видео)'};
+      +school-item(data)._main
+      
+      - var data = {imageSrc: '%=static=%images/assets/school-item/7.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед" 3:1 (Видео)'};
+      +school-item(data)._main
+      
+      - var data = {imageSrc: '%=static=%images/assets/school-item/8.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед" 3:1 (Видео)'};
+      +school-item(data)._main
+
+    .school-list__more Перейти в школу ставок

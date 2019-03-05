@@ -10,3 +10,17 @@ mixin prediction-item(data)
       .prediction-item__title «Вольфсбург» – «Штутгарт»: прогноз
       .prediction-item__date 19.05.2018
         span 19:00
+
+mixin prediction-item-big(data)
+  .prediction-item&attributes(attributes)
+    .prediction-item__image
+      img(src="#{data.imageSrc}" alt="")
+      .prediction-item__teams
+        img(src="%=static=%images/content/team-1_big.png" alt="")
+        span vs
+        img(src="%=static=%images/content/team-2_big.png" alt="")
+    .prediction-item__content
+      
+      .prediction-item__title=data.title
+      .prediction-item__date 19.05.2018
+        span 19:00

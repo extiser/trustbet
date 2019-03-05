@@ -1,3 +1,17 @@
-mixin news-list(data)
+include ../news-item/news-item
 
- .news-list
+mixin news-list(data)
+  .news-list
+    .news-list__top
+      .news-list__title ЛЕНТА НОВОСТЕЙ
+      .news-list__date 15 Декабря
+
+    .news-list__list
+      +news-item._main
+      +news-item._main
+      +news-item._main
+      +news-item._main
+      +news-item._main
+      +news-item._main
+
+    a(href="#" title="").news-list__more Смотреть всю ленту

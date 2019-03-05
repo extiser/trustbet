@@ -1,3 +1,30 @@
-mixin prediction-list(data)
+include ../prediction-item/prediction-item
 
- .prediction-list
+mixin prediction-list(data)
+  .prediction-list
+    .prediction-list__title Прогнозы
+    
+    .prediction-list__big
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/1_big.jpg', title: '«Боруссия» Мёнхенгладбах – «Нюрнберг»: прогноз от  TrustBet'};
+      +prediction-item-big(data)._big
+
+    .prediction-list__content
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/1.jpg', title: '«Вольфсбург» – «Штутгарт»: прогноз'};
+      +prediction-item(data)._main
+
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/2.jpg', title: '«Вольфсбург» – «Штутгарт»: прогноз'};
+      +prediction-item(data)._main
+
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/3.jpg', title: '«Вольфсбург» – «Штутгарт»: прогноз'};
+      +prediction-item(data)._main
+
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/4.jpg', title: '«Вольфсбург» – «Штутгарт»: прогноз'};
+      +prediction-item(data)._main
+
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/5.jpg', title: '«Вольфсбург» – «Штутгарт»: прогноз'};
+      +prediction-item(data)._main
+
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/1.jpg', title: '«Вольфсбург» – «Штутгарт»: прогноз'};
+      +prediction-item(data)._main
+
+    .prediction-list__more Смотреть все прогнозы

@@ -1,3 +1,32 @@
 .prediction-list {
+  margin-top: 55px;
+  &__title {
+    @extend .title._h2;
+  }
+  &__big {
+    margin-bottom: 12px;
+  }
+  &__content {
+    display: flex;
 
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__more {
+    display: block;
+
+    padding: 10px 0;
+
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: $link;
+    border: 1px solid #f3f3f3;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
 }

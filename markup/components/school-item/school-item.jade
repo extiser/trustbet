@@ -1,0 +1,5 @@
+mixin school-item(data)
+ .school-item&attributes(attributes)
+  .school-item__image
+    img(src="#{data.imageSrc}" alt="")
+  a(href="#" title="").school-item__title=data.title

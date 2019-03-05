@@ -9,6 +9,11 @@
 
   align-items: flex-start;
   justify-content: flex-start;
+  &._main {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 14px;
+  }
   &__time {
     font-family: $Bold;
     font-size: rem-calc(14);

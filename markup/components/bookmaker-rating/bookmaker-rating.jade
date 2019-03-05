@@ -1,3 +1,104 @@
-mixin bookmaker-rating(data)
+include ../star-rating/star-rating
 
- .bookmaker-rating
+mixin bookmaker-rating(data)
+  .bookmaker-rating
+    .bookmaker-rating__title РЕЙТИНГ БУКМЕКЕРОВ
+
+    .bookmaker-rating__list
+      .bookmaker-rating-item
+        .bookmaker-rating-item__left
+          .bookmaker-rating-item__logo
+            img(src="%=static=%images/content/bets-2_big.png" alt="")
+          .bookmaker-rating-item__rate
+            +star-rating
+        .bookmaker-rating-item__links._review
+          span Отзывы: 
+          strong 1560
+          a(href="#" title="") Обзор
+
+        .bookmaker-rating-item__links._bonus
+          span Бонус: 
+          strong 1000Р
+          a(href="#" title="") На сайт
+
+      .bookmaker-rating-item
+        .bookmaker-rating-item__left
+          .bookmaker-rating-item__logo
+            img(src="%=static=%images/content/bets-3_big.png" alt="")
+          .bookmaker-rating-item__rate
+            +star-rating
+        .bookmaker-rating-item__links._review
+          span Отзывы: 
+          strong 1560
+          a(href="#" title="") Обзор
+
+        .bookmaker-rating-item__links._bonus
+          span Бонус: 
+          strong 1000Р
+          a(href="#" title="") На сайт
+
+      .bookmaker-rating-item
+        .bookmaker-rating-item__left
+          .bookmaker-rating-item__logo
+            img(src="%=static=%images/content/bets-4_big.png" alt="")
+          .bookmaker-rating-item__rate
+            +star-rating
+        .bookmaker-rating-item__links._review
+          span Отзывы: 
+          strong 1560
+          a(href="#" title="") Обзор
+
+        .bookmaker-rating-item__links._bonus
+          span Бонус: 
+          strong 1000Р
+          a(href="#" title="") На сайт
+
+      .bookmaker-rating-item
+        .bookmaker-rating-item__left
+          .bookmaker-rating-item__logo
+            img(src="%=static=%images/content/bets-1_big.png" alt="")
+          .bookmaker-rating-item__rate
+            +star-rating
+        .bookmaker-rating-item__links._review
+          span Отзывы: 
+          strong 1560
+          a(href="#" title="") Обзор
+
+        .bookmaker-rating-item__links._bonus
+          span Бонус: 
+          strong 1000Р
+          a(href="#" title="") На сайт
+
+      .bookmaker-rating-item
+        .bookmaker-rating-item__left
+          .bookmaker-rating-item__logo
+            img(src="%=static=%images/content/bets-5_big.png" alt="")
+          .bookmaker-rating-item__rate
+            +star-rating
+        .bookmaker-rating-item__links._review
+          span Отзывы: 
+          strong 1560
+          a(href="#" title="") Обзор
+
+        .bookmaker-rating-item__links._bonus
+          span Бонус: 
+          strong 1000Р
+          a(href="#" title="") На сайт
+
+      .bookmaker-rating-item
+        .bookmaker-rating-item__left
+          .bookmaker-rating-item__logo
+            img(src="%=static=%images/content/bets-6_big.png" alt="")
+          .bookmaker-rating-item__rate
+            +star-rating
+        .bookmaker-rating-item__links._review
+          span Отзывы: 
+          strong 1560
+          a(href="#" title="") Обзор
+
+        .bookmaker-rating-item__links._bonus
+          span Бонус: 
+          strong 1000Р
+          a(href="#" title="") На сайт
+
+    a(href="#" title="").bookmaker-rating__more Полный рейтинг букмекеров

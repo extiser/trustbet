@@ -1,3 +1,45 @@
 .news-list {
+  margin-top: 32px;
+  &__top {
+    display: flex;
 
+    border-bottom: 1px dashed #e0e0e0;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    @extend .title._h2;
+  }
+  &__date {
+    font-family: $Semibold;
+
+    margin-bottom: 18px;
+
+    color: $orange;
+  }
+  &__more {
+    font-size: rem-calc(16);
+
+    display: inline-block;
+
+    margin-top: 14px;
+
+    text-decoration: none;
+
+    color: $link;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:after {
+      display: inline-block;
+
+      margin-left: 10px;
+
+      content: "";
+      vertical-align: middle;
+
+      @include bg($news-more);
+    }
+  }
 }

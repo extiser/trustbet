@@ -1,7 +1,63 @@
 .prediction-item {
   width: 100%;
   max-width: 225px;
+  &._main {
+    max-width: 220px;
+    margin-bottom: 10px;
+  }
+  &._big {
+    position: relative;
+
+    max-width: 100%;
+    .prediction-item {
+      &__content {
+        display: flex;
+
+        min-height: 90px;
+
+        align-items: center;
+        justify-content: space-between;
+      }
+      &__teams {
+        @include absolute-center;
+        span {
+          font-size: rem-calc(24);
+
+          padding: 0 50px;
+
+          color: $white;
+        }
+      }
+      &__title {
+        font-size: rem-calc(23);
+        line-height: rem-calc(29);
+
+        width: 100%;
+        max-width: 70%;
+      }
+      &__date {
+        font-size: rem-calc(23);
+
+        color: $white;
+        background: none;
+        &:before {
+          display: none;
+        }
+        span {
+          font-family: $Bold;
+          font-size: rem-calc(31);
+
+          display: block;
+
+          padding-left: 0;
+
+          color: $orange;
+        }
+      }
+    }
+  }
   &__image {
+    position: relative;
     img {
       display: block;
 

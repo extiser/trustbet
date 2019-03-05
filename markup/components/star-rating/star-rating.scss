@@ -1,0 +1,18 @@
+.star-rating {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  &__item {
+    margin: 0 2px;
+    &._full {
+      @include bg($star-full);
+    }
+    &._half {
+      @include bg($star-half);
+    }
+    &._empty {
+      @include bg($star-empty);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.school-list {
+  margin-top: 30px;
+  &__title {
+    margin-bottom: 0;
+
+    @extend .title._h2;
+  }
+  &__more {
+    font-size: rem-calc(16);
+
+    display: inline-block;
+
+    margin-top: 18px;
+
+    text-decoration: none;
+
+    color: $link;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:after {
+      display: inline-block;
+
+      margin-left: 10px;
+
+      content: "";
+      vertical-align: middle;
+
+      @include bg($news-more);
+    }
+  }
+}

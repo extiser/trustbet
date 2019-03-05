@@ -1,3 +1,299 @@
 mixin match-list(data)
+  .match-list
+    .match-list-filter
+      .match-list-filter__item._active Матчи сегодня
+      a(href="#" title="").match-list-filter__item Завтра
+      a(href="#" title="").match-list-filter__item Все матчи
 
- .match-list
+    - for (var i = 0; i < 4; i++)
+      .match-list__table
+        table
+          thead
+            tr
+              th 
+                img(src="%=static=%images/content/football-1.png" alt="")
+              th
+                strong Премьер-лига
+              th
+              th Россия
+              th 1
+              th x
+              th 2
+              th ТМ 4.5
+              th ТБ 4.5
+              th
+          tbody
+            tr
+              td 19:00
+              td
+                img(src="%=static=%images/content/team-5.png" alt="")
+                span Автомобилист
+              td —
+              td 
+                img(src="%=static=%images/content/team-6.png" alt="")
+                span Атлетик Бильбао
+              td
+                a(href="#" title="") 2,90
+              td
+                a(href="#" title="") 4,22
+              td
+                a(href="#" title="") 2,28
+              td
+                a(href="#" title="") 2,355
+              td
+                a(href="#" title="") 1,65
+              td
+                .info 3
+
+            tr
+              td 19:00
+              td
+                img(src="%=static=%images/content/team-5.png" alt="")
+                span Автомобилист
+              td —
+              td 
+                img(src="%=static=%images/content/team-6.png" alt="")
+                span Атлетик Бильбао
+              td
+                a(href="#" title="") 2,90
+              td
+                a(href="#" title="") 4,22
+              td
+                a(href="#" title="") 2,28
+              td
+                a(href="#" title="") 2,355
+              td
+                a(href="#" title="") 1,65
+              td
+                .hot 3
+
+            tr
+              td 19:00
+              td
+                img(src="%=static=%images/content/team-5.png" alt="")
+                span Автомобилист
+              td —
+              td 
+                img(src="%=static=%images/content/team-6.png" alt="")
+                span Атлетик Бильбао
+              td
+                a(href="#" title="") 2,90
+              td
+                a(href="#" title="") 4,22
+              td
+                a(href="#" title="") 2,28
+              td
+                a(href="#" title="") 2,355
+              td
+                a(href="#" title="") 1,65
+              td
+
+            tr
+              td 19:00
+              td
+                img(src="%=static=%images/content/team-5.png" alt="")
+                span Автомобилист
+              td —
+              td 
+                img(src="%=static=%images/content/team-6.png" alt="")
+                span Атлетик Бильбао
+              td
+                a(href="#" title="") 2,90
+              td
+                a(href="#" title="") 4,22
+              td
+                a(href="#" title="") 2,28
+              td
+                a(href="#" title="") 2,355
+              td
+                a(href="#" title="") 1,65
+              td
+    - ;
+
+    .match-list__table
+      table
+        thead
+          tr
+            th 
+              img(src="%=static=%images/content/football-1.png" alt="")
+            th
+              strong Премьер-лига
+            th
+            th Россия
+            th 1
+            th x
+            th 2
+            th ТМ 4.5
+            th ТБ 4.5
+            th
+        tbody
+          tr
+            td 19:00
+            td
+              img(src="%=static=%images/content/team-5.png" alt="")
+              span Автомобилист
+            td —
+            td 
+              img(src="%=static=%images/content/team-6.png" alt="")
+              span Атлетик Бильбао
+            td
+              a(href="#" title="") 2,90
+            td
+              a(href="#" title="") 4,22
+            td
+              a(href="#" title="") 2,28
+            td
+              a(href="#" title="") 2,355
+            td
+              a(href="#" title="") 1,65
+            td
+              .info 3
+
+          tr
+            td 19:00
+            td
+              img(src="%=static=%images/content/team-5.png" alt="")
+              span Автомобилист
+            td —
+            td 
+              img(src="%=static=%images/content/team-6.png" alt="")
+              span Атлетик Бильбао
+            td
+              a(href="#" title="") 2,90
+            td
+              a(href="#" title="") 4,22
+            td
+              a(href="#" title="") 2,28
+            td
+              a(href="#" title="") 2,355
+            td
+              a(href="#" title="") 1,65
+            td
+              .hot 3
+
+          tr
+            td 19:00
+            td
+              img(src="%=static=%images/content/team-5.png" alt="")
+              span Автомобилист
+            td —
+            td 
+              img(src="%=static=%images/content/team-6.png" alt="")
+              span Атлетик Бильбао
+            td
+              a(href="#" title="") 2,90
+            td
+              a(href="#" title="") 4,22
+            td
+              a(href="#" title="") 2,28
+            td
+              a(href="#" title="") 2,355
+            td
+              a(href="#" title="") 1,65
+            td
+
+          tr
+            td 19:00
+            td
+              img(src="%=static=%images/content/team-5.png" alt="")
+              span Автомобилист
+            td —
+            td 
+              img(src="%=static=%images/content/team-6.png" alt="")
+              span Атлетик Бильбао
+            td
+              a(href="#" title="") 2,90
+            td
+              a(href="#" title="") 4,22
+            td
+              a(href="#" title="") 2,28
+            td
+              a(href="#" title="") 2,355
+            td
+              a(href="#" title="") 1,65
+            td
+
+          tr
+            td 19:00
+            td
+              img(src="%=static=%images/content/team-5.png" alt="")
+              span Автомобилист
+            td —
+            td 
+              img(src="%=static=%images/content/team-6.png" alt="")
+              span Атлетик Бильбао
+            td
+              a(href="#" title="") 2,90
+            td
+              a(href="#" title="") 4,22
+            td
+              a(href="#" title="") 2,28
+            td
+              a(href="#" title="") 2,355
+            td
+              a(href="#" title="") 1,65
+            td
+
+          tr
+            td 19:00
+            td
+              img(src="%=static=%images/content/team-5.png" alt="")
+              span Автомобилист
+            td —
+            td 
+              img(src="%=static=%images/content/team-6.png" alt="")
+              span Атлетик Бильбао
+            td
+              a(href="#" title="") 2,90
+            td
+              a(href="#" title="") 4,22
+            td
+              a(href="#" title="") 2,28
+            td
+              a(href="#" title="") 2,355
+            td
+              a(href="#" title="") 1,65
+            td
+
+          tr
+            td 19:00
+            td
+              img(src="%=static=%images/content/team-5.png" alt="")
+              span Автомобилист
+            td —
+            td 
+              img(src="%=static=%images/content/team-6.png" alt="")
+              span Атлетик Бильбао
+            td
+              a(href="#" title="") 2,90
+            td
+              a(href="#" title="") 4,22
+            td
+              a(href="#" title="") 2,28
+            td
+              a(href="#" title="") 2,355
+            td
+              a(href="#" title="") 1,65
+            td
+              .hot 2
+
+          tr
+            td 19:00
+            td
+              img(src="%=static=%images/content/team-5.png" alt="")
+              span Автомобилист
+            td —
+            td 
+              img(src="%=static=%images/content/team-6.png" alt="")
+              span Атлетик Бильбао
+            td
+              a(href="#" title="") 2,90
+            td
+              a(href="#" title="") 4,22
+            td
+              a(href="#" title="") 2,28
+            td
+              a(href="#" title="") 2,355
+            td
+              a(href="#" title="") 1,65
+            td

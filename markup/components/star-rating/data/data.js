@@ -1,0 +1,1 @@
+var data = {star-rating: {}}
