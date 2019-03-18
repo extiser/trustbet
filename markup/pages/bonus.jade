@@ -1,0 +1,16 @@
+extend ./layout
+
+include ../components/breadcrumbs/breadcrumbs
+include ../components/news-list/news-list
+include ../components/bonus-top/bonus-top
+include ../components/bonus-list/bonus-list
+
+block content
+  .sided
+    .sided__left
+      +breadcrumbs
+      h1.title Бонусы
+      +bonus-top
+      +bonus-list
+    .sided__right
+      +news-list

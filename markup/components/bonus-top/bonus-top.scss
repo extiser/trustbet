@@ -1,0 +1,82 @@
+.bonus-top {
+  display: flex;
+
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.bonus-top-item {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 32%;
+  padding: 25px;
+
+  background: $gray;
+  &__header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    img {
+      display: block;
+
+      margin-bottom: 0;
+    }
+    &:after {
+      display: block;
+
+      content: "";
+
+      opacity: .3;
+
+      @include bg($present);
+    }
+  }
+  &__title {
+    font-family: $Semibold;
+    font-size: rem-calc(18);
+    line-height: rem-calc(23);
+
+    margin: 18px 0;
+    padding: 18px 0;
+
+    color: $black;
+    border-top: 1px dashed #d5d5d5;
+    border-bottom: 1px dashed #d5d5d5;
+  }
+  &__meta {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__reviews {
+    font-family: $Semibold;
+    font-size: rem-calc(14);
+
+    position: relative;
+
+    padding-left: 20px;
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: "";
+
+      @include bg($reviews);
+      @include vertical-center;
+    }
+  }
+  &__button {
+    display: block;
+
+    width: 100%;
+    margin-top: 14px;
+    padding: 14px 0;
+
+    text-align: center;
+
+    @extend .button;
+    @extend .button._green;
+  }
+}

@@ -1,6 +1,5 @@
 
 
-
 $('.about-match__more').on('click touchstart', function (e) {
   e.preventDefault();
   var text = $(this).html();
@@ -8,6 +7,8 @@ $('.about-match__more').on('click touchstart', function (e) {
   $('.about-match__hidden').slideToggle();
   $(this).hide();
 });
+
+
 
 
 
@@ -31,6 +32,7 @@ $('.match-info-nav__item').on('click touchstart', function (e) {
   $('html, body').animate({scrollTop: offset - 50}, 500, 'swing');
 
 });
+
 
 
 

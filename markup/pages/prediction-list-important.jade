@@ -1,0 +1,17 @@
+extend ./layout
+
+include ../components/breadcrumbs/breadcrumbs
+include ../components/news-list/news-list
+include ../components/match-list/match-list
+include ../components/about-block/about-block
+include ../components/prediction-list/prediction-list
+
+block content
+  .sided
+    .sided__left
+      +breadcrumbs
+      h1.title Анонс важных матчей
+      +prediction-list-inside
+      +about-block
+    .sided__right
+      +news-list

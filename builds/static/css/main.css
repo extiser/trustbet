@@ -442,7 +442,7 @@ table {
   border: 1px solid #778495;
 }
 
-.button, .bookmaker-rating-item__links a, .bookmakers-list-item__link {
+.button, .bonus-list-item__button, .bonus-top-item__button, .bookmakers-list-item__link, .bookmaker-rating-item__links a {
   font-size: 0.875rem;
   display: inline-block;
   padding: 5px 18px;
@@ -453,21 +453,21 @@ table {
   transition: all 0.4s ease-out;
 }
 
-.button._green, .bookmaker-rating-item__links a._green, .bookmaker-rating-item__links._bonus a, ._green.bookmakers-list-item__link, .bookmakers-list-item__link._external {
+.button._green, .bonus-list-item__button, .bonus-top-item__button, ._green.bookmakers-list-item__link, .bookmakers-list-item__link._external, .bookmaker-rating-item__links a._green, .bookmaker-rating-item__links._bonus a {
   color: #fff;
   background: #69aa51;
 }
 
-.button._green:hover, .bookmaker-rating-item__links a._green:hover, .bookmaker-rating-item__links._bonus a:hover, ._green.bookmakers-list-item__link:hover, .bookmakers-list-item__link._external:hover {
+.button._green:hover, .bonus-list-item__button:hover, .bonus-top-item__button:hover, ._green.bookmakers-list-item__link:hover, .bookmakers-list-item__link._external:hover, .bookmaker-rating-item__links a._green:hover, .bookmaker-rating-item__links._bonus a:hover {
   background: #7abb62;
 }
 
-.button._solid-black, .bookmaker-rating-item__links a._solid-black, .bookmaker-rating-item__links._review a, ._solid-black.bookmakers-list-item__link, .bookmakers-list-item__link._review {
+.button._solid-black, ._solid-black.bonus-list-item__button, ._solid-black.bonus-top-item__button, ._solid-black.bookmakers-list-item__link, .bookmakers-list-item__link._review, .bookmaker-rating-item__links a._solid-black, .bookmaker-rating-item__links._review a {
   color: #000;
   border: 1px solid rgba(32, 43, 59, 0.5);
 }
 
-.button._solid-black:hover, .bookmaker-rating-item__links a._solid-black:hover, .bookmaker-rating-item__links._review a:hover, ._solid-black.bookmakers-list-item__link:hover, .bookmakers-list-item__link._review:hover {
+.button._solid-black:hover, ._solid-black.bonus-list-item__button:hover, ._solid-black.bonus-top-item__button:hover, ._solid-black.bookmakers-list-item__link:hover, .bookmakers-list-item__link._review:hover, .bookmaker-rating-item__links a._solid-black:hover, .bookmaker-rating-item__links._review a:hover {
   color: #fff;
   background: #202b3b;
 }
@@ -625,10 +625,10 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -16px -78px;
+  background-position: -54px -82px;
   width: 12px;
   height: 10px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
@@ -639,6 +639,236 @@ body {
 
 .about-match__hidden {
   display: none;
+}
+
+.bonus-list {
+  margin-top: 31px;
+}
+
+.bonus-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 25px;
+  border: 1px solid #f3f3f3;
+  border-radius: 3px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bonus-list-item__right img {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.bonus-list-item__title {
+  font-family: "OpenSans-Semibold";
+  font-size: 1.125rem;
+  position: relative;
+  padding-left: 34px;
+  color: #000;
+}
+
+.bonus-list-item__title:before {
+  left: 0;
+  content: "";
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: 0px -54px;
+  width: 21px;
+  height: 24px;
+  background-size: 168px, 113px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.bonus-list-item__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.bonus-list-item__rating, .bonus-list-item__reviews {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #b0b0b0;
+}
+
+.bonus-list-item__rating {
+  margin-right: 20px;
+}
+
+.bonus-list-item__reviews {
+  margin-left: 60px;
+}
+
+.bonus-list-item__reviews span {
+  font-family: "OpenSans-Semibold";
+  font-size: 0.875rem;
+  color: #000;
+}
+
+.bonus-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bonus-top-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 32%;
+  padding: 25px;
+  background: #f3f3f3;
+}
+
+.bonus-top-item__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bonus-top-item__header img {
+  display: block;
+  margin-bottom: 0;
+}
+
+.bonus-top-item__header:after {
+  display: block;
+  content: "";
+  opacity: .3;
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: 0px -54px;
+  width: 21px;
+  height: 24px;
+  background-size: 168px, 113px;
+  background-repeat: no-repeat;
+}
+
+.bonus-top-item__title {
+  font-family: "OpenSans-Semibold";
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  margin: 18px 0;
+  padding: 18px 0;
+  color: #000;
+  border-top: 1px dashed #d5d5d5;
+  border-bottom: 1px dashed #d5d5d5;
+}
+
+.bonus-top-item__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bonus-top-item__reviews {
+  font-family: "OpenSans-Semibold";
+  font-size: 0.875rem;
+  position: relative;
+  padding-left: 20px;
+}
+
+.bonus-top-item__reviews:before {
+  position: absolute;
+  left: 0;
+  content: "";
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: 0px -82px;
+  width: 16px;
+  height: 13px;
+  background-size: 168px, 113px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.bonus-top-item__button {
+  display: block;
+  width: 100%;
+  margin-top: 14px;
+  padding: 14px 0;
+  text-align: center;
+}
+
+.bookmakers-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 21px;
+  padding: 25px 30px;
+  border: 1px solid #f3f3f3;
+  border-radius: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bookmakers-list-item__logo {
+  width: 100%;
+  max-width: 144px;
+  text-align: center;
+}
+
+.bookmakers-list-item__info span {
+  font-size: 0.6875rem;
+  display: block;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  color: #b0b0b0;
+}
+
+.bookmakers-list-item__info strong {
+  font-family: "OpenSans-Bold";
+  font-size: 1.125rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bookmakers-list-item__info._review strong {
+  color: #202b3b;
+}
+
+.bookmakers-list-item__info._bonus strong {
+  color: #69aa51;
 }
 
 .bookmaker-rating {
@@ -708,51 +938,6 @@ body {
 
 .bookmaker-rating-item__links._review strong {
   color: #202b3b;
-}
-
-.bookmakers-list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 21px;
-  padding: 25px 30px;
-  border: 1px solid #f3f3f3;
-  border-radius: 3px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.bookmakers-list-item__logo {
-  width: 100%;
-  max-width: 144px;
-  text-align: center;
-}
-
-.bookmakers-list-item__info span {
-  font-size: 0.6875rem;
-  display: block;
-  margin-bottom: 3px;
-  text-transform: uppercase;
-  color: #b0b0b0;
-}
-
-.bookmakers-list-item__info strong {
-  font-family: "OpenSans-Bold";
-  font-size: 1.125rem;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.bookmakers-list-item__info._review strong {
-  color: #202b3b;
-}
-
-.bookmakers-list-item__info._bonus strong {
-  color: #69aa51;
 }
 
 .bookmakers-news {
@@ -955,16 +1140,16 @@ body {
   background-position: -150px -29px;
   width: 17px;
   height: 17px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
 .bookmakers-reviews-item__title._negative:before {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -75px -54px;
+  background-position: -100px -54px;
   width: 16px;
   height: 17px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
@@ -1033,10 +1218,10 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -49px -78px;
+  background-position: -87px -82px;
   width: 13px;
   height: 6px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
@@ -1077,7 +1262,7 @@ body {
   background-position: 0px -29px;
   width: 146px;
   height: 21px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
@@ -1141,7 +1326,7 @@ body {
   background-position: 0px 0px;
   width: 168px;
   height: 25px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
@@ -1684,10 +1869,10 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -150px -54px;
+  background-position: -37px -82px;
   width: 13px;
   height: 12px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
@@ -1706,10 +1891,10 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px -78px;
+  background-position: 0px -99px;
   width: 12px;
   height: 14px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
@@ -2027,11 +2212,128 @@ body {
   content: "";
   vertical-align: middle;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px -96px;
+  background-position: -158px -54px;
   width: 7px;
   height: 11px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
+}
+
+.prediction-list {
+  margin-top: 55px;
+}
+
+.prediction-list._inside {
+  margin-top: 0;
+}
+
+.prediction-list__big {
+  margin-bottom: 12px;
+}
+
+.prediction-list__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.prediction-list__more {
+  margin-top: 0;
+}
+
+.school-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.school-bottom-item {
+  width: 100%;
+  max-width: 32%;
+}
+
+.school-bottom-item__image {
+  margin-bottom: 14px;
+}
+
+.school-bottom-item__image img {
+  display: block;
+  width: 100%;
+}
+
+.school-bottom-item__title {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.school-bottom-item__title:hover {
+  text-decoration: underline;
+}
+
+.school-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  padding-left: 0;
+  border-bottom: 1px dashed #e0e0e0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.school-item._main {
+  padding: 20px;
+  padding-left: 0;
+}
+
+.school-item._main .school-item__title {
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+.school-item._main .school-item__image {
+  margin-right: 30px;
+}
+
+.school-item._inside {
+  border-bottom: 0;
+  padding: 0 10px 16px 10px;
+}
+
+.school-item__image {
+  margin-right: 18px;
+}
+
+.school-item__title {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.school-item__title:hover {
+  text-decoration: underline;
 }
 
 .prediction-item {
@@ -2187,128 +2489,11 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -133px -54px;
+  background-position: -20px -82px;
   width: 13px;
   height: 13px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
-}
-
-.prediction-list {
-  margin-top: 55px;
-}
-
-.prediction-list._inside {
-  margin-top: 0;
-}
-
-.prediction-list__big {
-  margin-bottom: 12px;
-}
-
-.prediction-list__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.prediction-list__more {
-  margin-top: 0;
-}
-
-.school-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.school-bottom-item {
-  width: 100%;
-  max-width: 32%;
-}
-
-.school-bottom-item__image {
-  margin-bottom: 14px;
-}
-
-.school-bottom-item__image img {
-  display: block;
-  width: 100%;
-}
-
-.school-bottom-item__title {
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  text-decoration: none;
-  color: #000;
-}
-
-.school-bottom-item__title:hover {
-  text-decoration: underline;
-}
-
-.school-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 10px;
-  padding-left: 0;
-  border-bottom: 1px dashed #e0e0e0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.school-item._main {
-  padding: 20px;
-  padding-left: 0;
-}
-
-.school-item._main .school-item__title {
-  font-size: 1rem;
-  line-height: 1.375rem;
-}
-
-.school-item._main .school-item__image {
-  margin-right: 30px;
-}
-
-.school-item._inside {
-  border-bottom: 0;
-  padding: 0 10px 16px 10px;
-}
-
-.school-item__image {
-  margin-right: 18px;
-}
-
-.school-item__title {
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  text-decoration: none;
-  color: #000;
-}
-
-.school-item__title:hover {
-  text-decoration: underline;
 }
 
 .school-list {
@@ -2337,10 +2522,10 @@ body {
   content: "";
   vertical-align: middle;
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px -96px;
+  background-position: -158px -54px;
   width: 7px;
   height: 11px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
@@ -2468,10 +2653,10 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -114px -54px;
+  background-position: -139px -54px;
   width: 15px;
   height: 14px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
@@ -2550,10 +2735,10 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -32px -78px;
+  background-position: -70px -82px;
   width: 13px;
   height: 7px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
@@ -2648,10 +2833,10 @@ body {
 
 .star-rating__item._full {
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px -54px;
+  background-position: -75px -54px;
   width: 21px;
   height: 20px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
@@ -2660,7 +2845,7 @@ body {
   background-position: -50px -54px;
   width: 21px;
   height: 20px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
@@ -2669,7 +2854,7 @@ body {
   background-position: -25px -54px;
   width: 21px;
   height: 20px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
@@ -2711,10 +2896,10 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -66px -78px;
+  background-position: -104px -82px;
   width: 10px;
   height: 5px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
@@ -2820,10 +3005,10 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: -95px -54px;
+  background-position: -120px -54px;
   width: 15px;
   height: 15px;
-  background-size: 168px, 107px;
+  background-size: 168px, 113px;
   background-repeat: no-repeat;
 }
 
