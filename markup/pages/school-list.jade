@@ -1,0 +1,16 @@
+extend ./layout
+
+include ../components/breadcrumbs/breadcrumbs
+include ../components/news-list/news-list
+include ../components/school-top/school-top
+include ../components/school-listing/school-listing
+
+block content
+  .sided
+    .sided__left
+      +breadcrumbs
+      h1.title Школа ставок
+      +school-top
+      +school-listing
+    .sided__right
+      +news-list

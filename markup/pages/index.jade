@@ -5,13 +5,16 @@ include ../components/bookmaker-rating/bookmaker-rating
 include ../components/news-list/news-list
 include ../components/prediction-list/prediction-list
 include ../components/school-list/school-list
+include ../components/bookmakers-reviews/bookmakers-reviews
 
 block content
   .sided
-    .sided__left
+    .sided__left._main
       +match-list
       +prediction-list
-    .sided__right
+    .sided__right._main
       +bookmaker-rating
       +news-list
       +school-list
+    .sided__center
+      +bookmakers-reviews

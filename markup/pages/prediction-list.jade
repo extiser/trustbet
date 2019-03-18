@@ -1,0 +1,15 @@
+extend ./layout
+
+include ../components/breadcrumbs/breadcrumbs
+include ../components/news-list/news-list
+include ../components/match-list/match-list
+include ../components/prediction-list/prediction-list
+
+block content
+  .sided
+    .sided__left
+      +breadcrumbs
+      h1.title Прогнозы
+      +prediction-list-inside
+    .sided__right
+      +news-list

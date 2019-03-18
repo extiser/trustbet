@@ -1,0 +1,34 @@
+include ../star-rating/star-rating
+
+mixin bookmakers-list-item(data)
+  .bookmakers-list-item
+    .bookmakers-list-item__logo
+      img(src="%=static=%images/content/#{data}.png" alt="")
+    .bookmakers-list-item__rate
+      +star-rating
+    .bookmakers-list-item__info._review
+      span Отзывы: 
+      strong 1560
+    .bookmakers-list-item__info._bonus
+      span Бонус: 
+      strong 1000Р
+    a(href="#" title="").bookmakers-list-item__link._review Обзор
+    a(href="#" title="").bookmakers-list-item__link._external На сайт
+
+mixin bookmakers-list(data)
+  .bookmakers-list
+    +bookmakers-list-item('bets-1_big')
+    +bookmakers-list-item('bets-2_big')
+    +bookmakers-list-item('bets-3_big')
+    +bookmakers-list-item('bets-4_big')
+    +bookmakers-list-item('bets-5_big')
+    +bookmakers-list-item('bets-6_big')
+    +bookmakers-list-item('bets-4_big')
+    +bookmakers-list-item('bets-3_big')
+    +bookmakers-list-item('bets-1_big')
+    +bookmakers-list-item('bets-2_big')
+    +bookmakers-list-item('bets-5_big')
+    +bookmakers-list-item('bets-6_big')
+    +bookmakers-list-item('bets-4_big')
+    +bookmakers-list-item('bets-3_big')
+    +bookmakers-list-item('bets-1_big')

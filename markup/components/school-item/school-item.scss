@@ -2,20 +2,34 @@
   display: flex;
 
   width: 100%;
+  padding: 10px;
+  padding-left: 0;
 
   border-bottom: 1px dashed #e0e0e0;
 
   align-items: center;
   justify-content: flex-start;
+
   &._main {
     padding: 20px;
     padding-left: 0;
+    .school-item__title {
+      font-size: rem-calc(16);
+      line-height: rem-calc(22);
+    }
+    .school-item__image {
+      margin-right: 30px;
+    }
+  }
+  &._inside {
+    border-bottom: 0;
+    padding: 0 10px 16px 10px;
   }
   &__image {
-    margin-right: 30px;
+    margin-right: 18px;
   }
   &__title {
-    font-size: rem-calc(16);
+    font-size: rem-calc(14);
     line-height: rem-calc(22);
 
     text-decoration: none;

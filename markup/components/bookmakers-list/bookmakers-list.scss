@@ -1,0 +1,61 @@
+
+
+.bookmakers-list-item {
+  display: flex;
+
+  margin-bottom: 21px;
+  padding: 25px 30px;
+
+  border: 1px solid #f3f3f3;
+  border-radius: 3px;
+
+  align-items: center;
+  justify-content: space-between;
+  &__logo {
+    width: 100%;
+    max-width: 144px;
+
+    text-align: center;
+  }
+  &__info {
+    span {
+      font-size: rem-calc(11);
+
+      display: block;
+
+      margin-bottom: 3px;
+
+      text-transform: uppercase;
+
+      color: #b0b0b0;
+    }
+    strong {
+      font-family: $Bold;
+      font-size: rem-calc(18);
+
+      display: block;
+
+      margin-bottom: 10px;
+    }
+    &._review {
+      strong {
+        color: $blue;
+      }
+    }
+    &._bonus {
+      strong {
+        color: $green;
+      }
+    }
+  }
+  &__link {
+    @extend .button;
+
+    &._review {
+      @extend .button._solid-black;
+    }
+    &._external {
+      @extend .button._green;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+include ../school-item/school-item
+
+mixin school-top(data)
+  .school-top
+    .school-top__big
+      .school-top-item
+        .school-top-item__image
+          img(src="%=static=%images/assets/school-top/img-big.jpg" alt="")
+        .school-top-item__content
+          a(href="#" title="").school-top-item__title «Вольфсбург» – «Штутгарт»: прогноз
+    .school-top__right
+      - var data = {imageSrc: '%=static=%images/assets/school-item/1.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед" 3:1 (Видео)'};
+      +school-item(data)._inside
+
+      - var data = {imageSrc: '%=static=%images/assets/school-item/3.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед" 3:1 (Видео)'};
+      +school-item(data)._inside
+
+      - var data = {imageSrc: '%=static=%images/assets/school-item/4.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед" 3:1 (Видео)'};
+      +school-item(data)._inside
+
+  .school-bottom
+    .school-bottom-item
+      .school-bottom-item__image
+        img(src="%=static=%images/assets/school-top/img-medium.jpg" alt="")
+      a(href="#" title="").school-bottom-item__title Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед" 3:1 (Видео)
+
+    .school-bottom-item
+      .school-bottom-item__image
+        img(src="%=static=%images/assets/school-top/img-medium.jpg" alt="")
+      a(href="#" title="").school-bottom-item__title Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед" 3:1 (Видео)
+
+    .school-bottom-item
+      .school-bottom-item__image
+        img(src="%=static=%images/assets/school-top/img-medium.jpg" alt="")
+      a(href="#" title="").school-bottom-item__title Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед" 3:1 (Видео)

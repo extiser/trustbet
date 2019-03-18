@@ -1,0 +1,12 @@
+mixin school-listing(data)
+  .school-listing
+    - for (var i = 0; i < 6; i++)
+      .school-listing-item
+        .school-listing-item__image
+          img(src="%=static=%images/assets/school-top/img-small.jpg" alt="")
+        .school-listing-item__content
+          a(href="#" title="").school-listing-item__title «Боруссия» Мёнхенгладбах – «Нюрнберг»:
+          .school-listing-item__caption FAQ об отличии букмекерских контор, зарегистрированных в оффшорах, от букмекерских контор, лицензированных в России. Коротко об интерактивных ставках. 
+    - ;
+
+    .load-more Показать еще

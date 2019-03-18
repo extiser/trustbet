@@ -1,0 +1,33 @@
+include ../school-item/school-item
+
+mixin bookmakers-news(data)
+  .bookmakers-news
+    .school-list
+      .school-list__title Новости букмекеров
+
+      .school-list__content
+        - var data = {imageSrc: '%=static=%images/assets/school-item/1.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед"'};
+        +school-item(data)
+        
+        - var data = {imageSrc: '%=static=%images/assets/school-item/2.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед"'};
+        +school-item(data)
+
+        - var data = {imageSrc: '%=static=%images/assets/school-item/3.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед"'};
+        +school-item(data)
+        
+        - var data = {imageSrc: '%=static=%images/assets/school-item/4.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед"'};
+        +school-item(data)
+        
+        - var data = {imageSrc: '%=static=%images/assets/school-item/5.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед"'};
+        +school-item(data)
+        
+        - var data = {imageSrc: '%=static=%images/assets/school-item/6.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед"'};
+        +school-item(data)
+        
+        - var data = {imageSrc: '%=static=%images/assets/school-item/7.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед"'};
+        +school-item(data)
+        
+        - var data = {imageSrc: '%=static=%images/assets/school-item/8.jpg', title: 'Чемпионат Англии. "Ливерпуль" "Манчестер Юнайтед"'};
+        +school-item(data)
+
+      .school-list__more Смотреть все новости

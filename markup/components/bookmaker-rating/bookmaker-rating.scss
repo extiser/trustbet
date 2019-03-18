@@ -63,38 +63,19 @@
       margin-bottom: 10px;
     }
     a {
-      font-size: rem-calc(14);
-
-      display: inline-block;
-
-      padding: 5px 18px;
-
-      text-decoration: none;
-
-      border-radius: 3px;
-
-      @include transition;
+      @extend .button;
     }
     &._review {
       strong {
         color: $blue;
       }
       a {
-        color: $black;
-        border: 1px solid rgba($blue, .5);
-        &:hover {
-          color: $white;
-          background: $blue;
-        }
+        @extend .button._solid-black;
       }
     }
     &._bonus {
       a {
-        color: $white;
-        background: $green;
-        &:hover {
-          background: $green + #111;
-        }
+        @extend .button._green;
       }
     }
   }

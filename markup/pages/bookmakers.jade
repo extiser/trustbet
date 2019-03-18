@@ -1,0 +1,18 @@
+extend ./layout
+
+include ../components/breadcrumbs/breadcrumbs
+include ../components/news-list/news-list
+include ../components/bookmakers-list/bookmakers-list
+include ../components/bookmakers-news/bookmakers-news
+include ../components/about-block/about-block
+
+block content
+  .sided
+    .sided__left
+      +breadcrumbs
+      h1.title Букмекеры
+      +bookmakers-list
+      +about-block
+    .sided__right
+      +bookmakers-news
+      +news-list

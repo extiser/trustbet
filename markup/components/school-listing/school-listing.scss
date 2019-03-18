@@ -1,0 +1,46 @@
+.school-listing-item {
+  display: flex;
+
+  margin-top: 30px;
+  padding-top: 30px;
+
+  border-top: 1px dashed #e0e0e0;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  &__image {
+    width: 100%;
+    max-width: 212px;
+    margin-right: 20px;
+    img {
+      display: block;
+
+      width: 100%;
+    }
+  }
+  &__content {
+    width: 100%;
+    max-width: calc(840px - 232px);
+  }
+  &__title {
+    font-family: $Semibold;
+    font-size: rem-calc(20);
+    line-height: rem-calc(32);
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    text-decoration: none;
+
+    color: $black;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__caption {
+    font-size: rem-calc(14);
+    line-height: rem-calc(22);
+  }
+}

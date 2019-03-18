@@ -5,6 +5,9 @@
 
   align-items: flex-end;
   justify-content: flex-start;
+  &._inside {
+    margin-top: 40px;
+  }
   &__item {
     margin-right: 50px;
 

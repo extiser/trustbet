@@ -1,6 +1,10 @@
 .prediction-item {
   width: 100%;
   max-width: 225px;
+  &._inside {
+    max-width: 32%;
+    margin-bottom: 14px;
+  }
   &._main {
     max-width: 220px;
     margin-bottom: 10px;
@@ -34,6 +38,8 @@
 
         width: 100%;
         max-width: 70%;
+
+        text-decoration: none;
       }
       &__date {
         font-size: rem-calc(23);
