@@ -1,0 +1,22 @@
+extend ./layout
+
+include ../components/breadcrumbs/breadcrumbs
+include ../components/match-info/match-info
+include ../components/about-match/about-match
+include ../components/match-bets/match-bets
+include ../components/match-prediction/match-prediction
+include ../components/match-news/match-news
+include ../components/match-players/match-players
+include ../components/match-games/match-games
+include ../components/match-tourney/match-tourney
+
+block content
+  +breadcrumbs
+  +match-info-end
+  +about-match
+  +match-bets
+  +match-prediction
+  +match-news
+  +match-players
+  +match-games
+  +match-tourney

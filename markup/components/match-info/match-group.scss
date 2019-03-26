@@ -104,4 +104,18 @@
   &__judge {
     padding-top: 17px;
   }
+  &__end {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+  &__count {
+    font-family: $Bold;
+    font-size: rem-calc(26);
+
+    margin: 0 20px;
+
+    color: $green;
+  }
 }

@@ -96,3 +96,107 @@ mixin match-info(data)
                   span.dot._green
                   span.dot._yellow
                   span.dot._green
+
+mixin match-info-end(data)
+  section.match-info
+    header.match-info__header
+      h1 Манчестер Юнайтед - ПСЖ
+
+      nav.match-info-nav
+        a(href="#bets" title="Ставки").match-info-nav__item Ставки
+        a(href="#prediction" title="Прогнозы").match-info-nav__item Прогнозы
+        a(href="#news" title="Новости").match-info-nav__item Новости
+        a(href="#players" title="Составы").match-info-nav__item Составы
+        a(href="#stats" title="Статистика").match-info-nav__item Статистика
+        a(href="#tourney" title="Таблица").match-info-nav__item Таблица
+
+    .match-group
+      .match-player
+        .match-player__header 
+          .match-player__logo
+            img(src="%=static=%images/assets/match-info/player-1.png" alt="")
+          .match-player__title Манчестер Юнайтед
+        .match-player__table
+          table
+            thead
+              tr
+                th #
+                th И
+                th В
+                th Н
+                th П
+                th Голы
+                th Очки
+                th форма
+            tbody
+              tr
+                td 12
+                td 16
+                td 5
+                td 6
+                td 5
+                td 19 : 19
+                td 21            
+                td
+                  span.dot._red
+                  span.dot._red
+                  span.dot._green
+                  span.dot._yellow
+                  span.dot._green
+      
+      .match-group-info
+        .match-group-info__league
+          img(src="%=static=%images/content/football-11.png" alt="")
+          span Лига чемпионов
+
+        .match-group-info__start
+          
+          .match-group-info__title Матч окончен
+          .match-group-info__end
+            .match-group-info__count 4
+            .match-group-info__date 19.05.2018
+            .match-group-info__count 3
+          .match-group-info__time 19:00
+          
+
+        .match-group-info__stadium
+          .match-group-info__title Стадион:
+            span Олд Траффорд
+            span (Манчестер, Англия)
+
+        .match-group-info__judge
+          .match-group-info__title Судья:
+            span Пьерлуиджи Коллина
+
+      .match-player
+        .match-player__header 
+          .match-player__logo
+            img(src="%=static=%images/assets/match-info/player-2.png" alt="")
+          .match-player__title ПСЖ
+        .match-player__table
+          table
+            thead
+              tr
+                th #
+                th И
+                th В
+                th Н
+                th П
+                th Голы
+                th Очки
+                th форма
+            tbody
+              tr
+                td 12
+                td 16
+                td 5
+                td 6
+                td 5
+                td 19 : 19
+                td 21            
+                td
+                  span.dot._red
+                  span.dot._red
+                  span.dot._green
+                  span.dot._yellow
+                  span.dot._green
