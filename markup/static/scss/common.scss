@@ -5,6 +5,12 @@ body {
   height: 100%;
 }
 
+* {
+  &:focus {
+    outline: none;
+  }
+}
+
 .wrapper {
   width: 100%;
   max-width: 1440px;

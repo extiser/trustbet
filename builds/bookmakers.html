@@ -73,7 +73,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="user login"><a href="#" title="" class="login__btn">Войти</a>
+                    <div class="user login"><a href="#" title="" data-target="#signin" class="login__btn toggler">Войти</a>
                     </div>
                 </div>
             </header>
@@ -588,6 +588,77 @@
                 </nav>
             </div>
         </div>
+        <div id="signin" class="modal _signin">
+            <div class="modal__close"></div>
+            <div class="modal__top">
+                <div class="modal__logo"></div>
+                <div class="modal__title">Создание нового аккаунта</div>
+            </div>
+            <form metcho="" action="" class="modal-form">
+                <div class="modal-form__field _email">
+                    <input type="email" value="" placeholder="E-MAIL">
+                </div>
+                <div class="modal-form__field _password">
+                    <input type="password" value="" placeholder="ПАРОЛЬ">
+                </div>
+                <div class="modal-form__meta">
+                    <label class="modal-form__remember">
+                        <input type="checkbox" value=""><span>Запомнить меня</span>
+                    </label><a href="#" title="" class="modal-form__forgot">Забыли пароль?</a>
+                </div>
+                <input type="submit" value="Войти" class="modal-form__button">
+            </form>
+            <div class="modal-social">
+                <div class="modal-social__title">Войти с помощью соц. сетей</div>
+                <div class="modal-social__list">
+                    <button class="modal-social__item _fb"></button>
+                    <a href="#" title="" class="modal-social__item _tw"></a>
+                    <div class="modal-social__item _vk"></div>
+                    <div class="modal-social__item _tg"></div>
+                    <div class="modal-social__item _gp"></div>
+                </div>
+            </div>
+            <div class="modal__bottom">Впервые на сайте? <a href="#" title="" data-target="#signup" class="toggler">Регистрация</a>
+            </div>
+        </div>
+        <div id="signup" class="modal _signup">
+            <div class="modal__close"></div>
+            <div class="modal__top">
+                <div class="modal__logo"></div>
+                <div class="modal__title">Создание нового аккаунта</div>
+            </div>
+            <form metcho="" action="" class="modal-form">
+                <div class="modal-form__field _name">
+                    <input type="text" value="" placeholder="ИМЯ">
+                </div>
+                <div class="modal-form__field _email">
+                    <input type="email" value="" placeholder="E-MAIL">
+                </div>
+                <div class="modal-form__field _password">
+                    <input type="password" value="" placeholder="ПАРОЛЬ">
+                </div>
+                <div class="modal-form__field _password">
+                    <input type="password" value="" placeholder="ПОВТОРИТЕ ПАРОЛЬ">
+                </div>
+                <div class="modal-form__captcha">
+                    <img src="static/images/content/temp-captcha.png" alt="">
+                </div>
+                <input type="submit" value="Зарегистрироваться" class="modal-form__button">
+            </form>
+            <div class="modal-social">
+                <div class="modal-social__title">Войти с помощью соц. сетей</div>
+                <div class="modal-social__list">
+                    <button class="modal-social__item _fb"></button>
+                    <a href="#" title="" class="modal-social__item _tw"></a>
+                    <div class="modal-social__item _vk"></div>
+                    <div class="modal-social__item _tg"></div>
+                    <div class="modal-social__item _gp"></div>
+                </div>
+            </div>
+            <div class="modal__bottom">У вас уже есть аккаунт? <a href="#" title="">Войти</a>
+            </div>
+        </div>
+        <div class="mask"></div>
         <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
         <script src="static/js/main.min.js"></script>
     </body>

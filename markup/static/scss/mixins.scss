@@ -74,3 +74,10 @@
 @mixin transition($time: .4s) {
   transition: all $time ease-out;
 }
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}

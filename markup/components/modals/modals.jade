@@ -1,0 +1,70 @@
+mixin modal-signup(data)
+  .modal._signup#signup
+    .modal__close
+    .modal__top
+      .modal__logo
+      .modal__title Создание нового аккаунта
+
+    form(metcho="" action="").modal-form
+      .modal-form__field._name
+        input(type="text" value="" placeholder="ИМЯ")
+
+      .modal-form__field._email
+        input(type="email" value="" placeholder="E-MAIL")
+
+      .modal-form__field._password
+        input(type="password" value="" placeholder="ПАРОЛЬ")
+
+      .modal-form__field._password
+        input(type="password" value="" placeholder="ПОВТОРИТЕ ПАРОЛЬ")
+
+      .modal-form__captcha
+        img(src="%=static=%images/content/temp-captcha.png" alt="")
+
+      input(type="submit" value="Зарегистрироваться").modal-form__button
+
+    .modal-social
+      .modal-social__title Войти с помощью соц. сетей
+      .modal-social__list
+        button.modal-social__item._fb
+        a(href="#" title="").modal-social__item._tw
+        .modal-social__item._vk
+        .modal-social__item._tg
+        .modal-social__item._gp
+
+    .modal__bottom У вас уже есть аккаунт? 
+      a(href="#" title="") Войти
+
+mixin modal-signin(data)
+ .modal._signin#signin
+    .modal__close
+    .modal__top
+      .modal__logo
+      .modal__title Создание нового аккаунта
+
+    form(metcho="" action="").modal-form
+      .modal-form__field._email
+        input(type="email" value="" placeholder="E-MAIL")
+
+      .modal-form__field._password
+        input(type="password" value="" placeholder="ПАРОЛЬ")
+
+      .modal-form__meta
+        label.modal-form__remember
+          input(type="checkbox" value="")
+          span Запомнить меня
+        a(href="#" title="").modal-form__forgot Забыли пароль?
+
+      input(type="submit" value="Войти").modal-form__button
+
+    .modal-social
+      .modal-social__title Войти с помощью соц. сетей
+      .modal-social__list
+        button.modal-social__item._fb
+        a(href="#" title="").modal-social__item._tw
+        .modal-social__item._vk
+        .modal-social__item._tg
+        .modal-social__item._gp
+
+    .modal__bottom Впервые на сайте? 
+      a(href="#" title="" data-target="#signup").toggler Регистрация

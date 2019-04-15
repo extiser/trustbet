@@ -1,0 +1,71 @@
+.league-tourney {
+  margin-top: 40px;
+
+  &__team {
+    img {
+      display: inline-block;
+
+      width: 20px;
+
+      vertical-align: middle;
+    }
+    span {
+      padding-left: 8px;
+    }
+  }
+  &__table {
+    width: 100%;
+    margin-bottom: 20px;
+    table {
+      width: 100%;
+
+      border: 1px solid #f3f3f3;
+      border-radius: 3px;
+      thead {
+        tr {
+          th {
+            font-size: rem-calc(14);
+            font-weight: normal;
+
+            padding: 10px 8px;
+
+            color: #9b9b9b;
+            background: #f3f3f3;
+            &:last-child {
+              text-align: left;
+            }
+            &:nth-child(2) {
+              text-align: left;
+            }
+            img {
+              display: block;
+
+              margin: auto;
+            }
+            strong {
+              font-family: $Semibold;
+
+              color: $black;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          border-bottom: 1px solid #f3f3f3;
+          td {
+            font-size: rem-calc(14);
+
+            padding: 10px 8px;
+
+            text-align: center;
+            &:nth-child(2),
+            &:last-child {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
