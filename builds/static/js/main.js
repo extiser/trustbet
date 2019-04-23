@@ -90,3 +90,7 @@ $('.modal__close, .mask').on('click', function (e) {
     $('.mask').fadeOut();
 
 });
+
+
+
+

@@ -1,0 +1,62 @@
+mixin user-settings(data)
+  .user-settings
+    .user-settings__left
+      .user-settings__image
+        img(src="%=static=%images/assets/user-settings/placeholder.jpg" alt="")
+
+        form(method="" action="")
+          .user-settings__update-photo Обновить фото
+            input(type="file")
+
+    .user-settings__right
+      .user-settings__group
+        .user-settings__title Общая инфрмация
+
+        form(method="" action="").user-settings__form
+          .user-settings__field
+            label Имя
+            input(type="text" value="")
+
+          .user-settings__field
+            label Фамилия
+            input(type="text" value="")
+
+          .user-settings__field
+            label Дата рождения
+            input(type="text" value="")
+
+          .user-settings__field
+            label ОТуда Вы
+            input(type="text" value="")
+
+          .user-settings__field
+            label Email
+            input(type="text" value="")
+
+          .user-settings__field
+            label Telegram
+            input(type="text" value="")
+
+          .user-settings__field._full
+            label ЛЮбимая команда
+            input(type="text" value="")
+
+          button(type="submit").user-settings__submit Сохранить
+
+      .user-settings__group
+        .user-settings__title Пароль
+
+        form(method="" action="").user-settings__form
+          .user-settings__field._full
+            label Ваш пароль
+            input(type="password" value="")
+
+          .user-settings__field._full
+            label Новый пароль
+            input(type="password" value="")
+
+          .user-settings__field._full
+            label Подтвердите пароль
+            input(type="password" value="")
+
+          button(type="submit").user-settings__submit Изменить пароль

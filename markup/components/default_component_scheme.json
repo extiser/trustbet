@@ -14,7 +14,7 @@
     "files": [
         {
             "name": "__componentName__.__templateExtension__",
-            "content": "mixin __componentName__(data)\n .__componentName__"
+            "content": "mixin __componentName__(data)\n  .__componentName__"
         }, {
             "name": "__componentName__.__cssExtension__",
             "content": ".__componentName__ {\n\n}"

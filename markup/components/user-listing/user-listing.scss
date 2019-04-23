@@ -1,0 +1,223 @@
+.user-listing {
+  padding-top: 33px;
+  &__title {
+    font-family: $Bold;
+    font-size: rem-calc(16);
+
+    margin-bottom: 14px;
+
+    text-transform: uppercase;
+
+    color: #202b3b;
+  }
+  &__more {
+    @extend .load-more;
+  }
+}
+
+.user-listing-item {
+  margin-bottom: 23px;
+  padding: 26px 20px;
+
+  border: 2px solid #f5f5f5;
+  border-radius: 4px;
+
+  &__top {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__user {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__image {
+    margin-right: 20px;
+    img {
+      display: block;
+
+      border-radius: 50%;
+    }
+  }
+  &__name {
+    font-size: rem-calc(14);
+
+    color: #627082;
+  }
+  &__act {
+    font-family: $Italic;
+    font-size: rem-calc(14);
+
+    margin-left: 55px;
+
+    color: rgba($black, .5);
+    img {
+      position: relative;
+      top: -2px;
+
+      display: inline-block;
+
+      margin-left: 10px;
+
+      vertical-align: middle;
+    }
+  }
+  &__date {
+    font-size: rem-calc(14);
+
+    color: #7e7e7e;
+  }
+  &__content {
+    padding: 10px 60px;
+  }
+  &__title {
+    font-size: rem-calc(23);
+    line-height: rem-calc(29);
+
+    color: #2a2a2a;
+  }
+  &__text {
+    font-size: rem-calc(14);
+    line-height: rem-calc(21);
+  }
+
+  &__meta {
+    display: flex;
+
+    padding-top: 14px;
+    padding-left: 60px;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__comments {
+    font-size: rem-calc(11);
+
+    position: relative;
+
+    box-sizing: border-box;
+    margin-right: 28px;
+    padding: 6px 8px;
+    padding-left: 26px;
+
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #7e7e7e;
+    border: 1px solid #97a3b5;
+    border-radius: 4px;
+
+    @include transition;
+    &:hover {
+      cursor: pointer;
+
+      border: 1px solid $light-blue;
+    }
+    &:before {
+      left: 8px;
+
+      content: "";
+
+      @include vertical-center;
+      @include bg($arrow-bottom);
+    }
+    span {
+      font-family: $Semibold;
+      font-size: rem-calc(14);
+
+      padding-left: 4px;
+
+      color: #202b3b;
+    }
+  }
+  &__go {
+    font-size: rem-calc(14);
+
+    @extend .link;
+  }
+  &__negative {
+    font-size: rem-calc(16);
+
+    position: relative;
+
+    padding-left: 24px;
+
+    text-transform: uppercase;
+
+    color: $red;
+    &:before {
+      left: 0;
+
+      content: "";
+
+      @include vertical-center;
+      @include bg($negative);
+    }
+  }
+  &__positive {
+    font-size: rem-calc(16);
+
+    position: relative;
+
+    padding-left: 24px;
+
+    text-transform: uppercase;
+
+    color: $green;
+    &:before {
+      left: 0;
+
+      content: "";
+
+      @include vertical-center;
+      @include bg($positive);
+    }
+  }
+}
+
+.user-listing-item-reviews {
+  padding-top: 6px;
+  &__title {
+    font-size: rem-calc(14);
+
+    text-transform: uppercase;
+
+    color: #7e7e7e;
+  }
+  &__item {
+    font-family: $Italic;
+
+    position: relative;
+
+    margin-top: 10px;
+    padding-left: 28px;
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: "";
+
+      @include vertical-center;
+    }
+    &._plus {
+      &:before {
+        @include bg($review-plus);
+      }
+    }
+    &._minus {
+      &:before {
+        @include bg($review-minus);
+      }
+    }
+  }
+}

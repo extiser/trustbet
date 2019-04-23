@@ -1,0 +1,16 @@
+extend ./layout
+
+include ../components/breadcrumbs/breadcrumbs
+include ../components/news-list/news-list
+include ../components/user-top/user-top
+include ../components/user-listing/user-listing
+
+block content
+  .sided
+    .sided__left
+      +breadcrumbs
+      h1.title Криштиану Роналду
+      +user-top
+      +user-listing
+    .sided__right
+      +news-list

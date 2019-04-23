@@ -1,0 +1,83 @@
+.user-top {
+  display: flex;
+
+  align-items: stretch;
+  justify-content: flex-start;
+  &__left {
+    display: flex;
+
+    box-sizing: border-box;
+    width: 65%;
+    padding: 25px;
+
+    background-color: #f3f3f3;
+
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__bets {
+    font-size: rem-calc(14);
+
+    box-sizing: border-box;
+    width: 35%;
+    padding: 25px;
+    padding-top: 30px;
+
+    text-transform: uppercase;
+
+    color: #778495;
+    background-color: #f9f9f9;
+    img {
+      display: block;
+
+      margin-top: 14px;
+    }
+  }
+  &__image {
+    margin-right: 50px;
+    img {
+      display: block;
+
+      border: 4px solid $green;
+      border-radius: 50%;
+    }
+  }
+}
+
+.user-top-info {
+  &__item {
+    font-size: rem-calc(14);
+
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    text-transform: uppercase;
+
+    color: #778495;
+    border-bottom: 1px dashed #d5d5d5;
+    &:last-child {
+      border-bottom: 0;
+    }
+    span {
+      font-family: $Semibold;
+      font-size: rem-calc(16);
+
+      display: block;
+
+      margin-top: 5px;
+
+      text-transform: none;
+
+      color: $black;
+      img {
+        display: inline-block;
+
+        width: 20px;
+        height: auto;
+        margin-left: 5px;
+
+        vertical-align: middle;
+      }
+    }
+  }
+}
