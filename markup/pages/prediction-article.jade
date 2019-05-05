@@ -1,0 +1,18 @@
+extend ./layout
+
+include ../components/breadcrumbs/breadcrumbs
+include ../components/news-list/news-list
+include ../components/prediction-article/prediction-article
+include ../components/bookmakers-sidebar/bookmakers-sidebar
+include ../components/comming-matches/comming-matches
+
+block content
+  .sided
+    .sided__left
+      +breadcrumbs
+      h1.title «Манчестер Юнайтед» – ПСЖ»: прогноз на футбол от TrustBet
+      +prediction-article
+    .sided__right
+      +bookmakers-sidebar
+      +comming-matches
+      +news-list

@@ -1,0 +1,38 @@
+mixin prediction-inside(data)
+  .prediction-inside
+    .prediction-inside__title Прогноз
+    .match-group
+      .match-player
+        .match-player__header 
+          .match-player__logo
+            img(src="%=static=%images/assets/match-info/player-1.png" alt="")
+          .match-player__title Манчестер Юнайтед
+      
+      .match-group-info
+        .match-group-info__league
+          img(src="%=static=%images/content/football-11.png" alt="")
+          span Лига чемпионов
+
+        .match-group-info__start
+          .match-group-info__title Начало матча
+          .match-group-info__date 19.05.2018
+          .match-group-info__time 19:00
+
+        .match-group-info__stadium
+          .match-group-info__title Стадион:
+            span Олд Траффорд
+            span (Манчестер, Англия)
+
+      .match-player
+        .match-player__header 
+          .match-player__logo
+            img(src="%=static=%images/assets/match-info/player-2.png" alt="")
+          .match-player__title ПСЖ
+    
+    .prediction-inside-verdict._green
+      .prediction-inside-verdict__left Прогноз: <span>Обе забьют - Да</span>
+      a(href="#" title="").prediction-inside-verdict__go Перейти на матч
+
+    .prediction-inside-verdict._red
+      .prediction-inside-verdict__left Прогноз: <span>Обе забьют - Нет</span>
+      a(href="#" title="").prediction-inside-verdict__go Перейти на матч

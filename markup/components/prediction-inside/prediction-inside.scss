@@ -1,0 +1,48 @@
+.prediction-inside {
+  margin-top: 30px;
+  &__title {
+    @extend .title._h2;
+  }
+  .match-group-info {
+    max-width: 30%;
+  }
+}
+
+.prediction-inside-verdict {
+  display: flex;
+
+  margin-top: 30px;
+  padding: 20px 42px;
+
+  color: #202b3b;
+  border: 2px solid;
+
+  align-items: center;
+  justify-content: space-between;
+  &._green {
+    border-color: #e1eedc;
+    span {
+      color: $green;
+    }
+  }
+  &._red {
+    border-color: rgba($red, .2);
+    span {
+      color: $red;
+    }
+  }
+  &__left {
+    font-size: rem-calc(18);
+
+    color: $blue;
+    span {
+      font-family: $Bold;
+    }
+  }
+  &__go {
+    padding: 10px 30px;
+
+    @extend .button;
+    @extend .button._solid-black;
+  }
+}

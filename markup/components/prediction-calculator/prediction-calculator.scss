@@ -1,0 +1,70 @@
+.prediction-calculator {
+  margin-top: 30px;
+  &__title {
+    @extend .title._h2;
+  }
+}
+
+.prediction-calculator-item {
+  display: flex;
+
+  margin-bottom: 20px;
+  padding: 20px;
+
+  border: 2px solid #f5f5f5;
+
+  align-items: center;
+  justify-content: space-between;
+  &__logo {
+    width: 130px;
+  }
+  &__text {
+    font-size: rem-calc(11);
+
+    width: 90px;
+
+    text-transform: uppercase;
+
+    color: #b0b0b0;
+
+    span {
+      font-family: $Semibold;
+      font-size: rem-calc(18);
+
+      display: block;
+
+      margin-top: 3px;
+
+      text-transform: none;
+    }
+    &._black {
+      span {
+        color: $blue;
+      }
+    }
+    &._green {
+      span {
+        color: $green;
+      }
+    }
+  }
+  &__input {
+    width: 130px;
+    input {
+      font-size: rem-calc(14);
+
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px 5px;
+
+      border: 1px solid #f3f3f3;
+      border-radius: 4px;
+    }
+  }
+  &__button {
+    padding: 10px 20px;
+
+    @extend .button;
+    @extend .button._green;
+  }
+}

@@ -4,6 +4,7 @@ include ../components/breadcrumbs/breadcrumbs
 include ../components/news-list/news-list
 include ../components/match-list/match-list
 include ../components/prediction-list/prediction-list
+include ../components/bookmakers-sidebar/bookmakers-sidebar
 
 block content
   .sided
@@ -12,4 +13,5 @@ block content
       h1.title Прогнозы
       +prediction-list-inside
     .sided__right
+      +bookmakers-sidebar
       +news-list

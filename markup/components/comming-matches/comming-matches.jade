@@ -1,0 +1,65 @@
+mixin comming-matches(data)
+  .comming-matches
+    .comming-matches__top
+      .comming-matches__title Ближайшие матчи
+      .comming-matches__nav
+        span._active
+        span
+        span
+        span
+        span
+
+    .comming-matches__body
+      .comming-matches__slide._active
+        +comming-matches-group
+      .comming-matches__slide
+        +comming-matches-group
+      .comming-matches__slide
+        +comming-matches-group
+      .comming-matches__slide
+        +comming-matches-group
+      .comming-matches__slide
+        +comming-matches-group
+
+mixin comming-matches-group()
+  .comming-matches-group
+    .comming-matches-player
+      .comming-matches-player__header 
+        .comming-matches-player__logo
+          img(src="%=static=%images/assets/match-info/player-1.png" alt="")
+        .comming-matches-player__title Манчестер Юнайтед
+    
+    .comming-matches-group-info
+      .comming-matches-group-info__start
+        .comming-matches-group-info__date 19.05.2018
+        .comming-matches-group-info__time 19:00
+
+    .comming-matches-player
+      .comming-matches-player__header 
+        .comming-matches-player__logo
+          img(src="%=static=%images/assets/match-info/player-2.png" alt="")
+        .comming-matches-player__title ПСЖ
+  
+  .comming-matches__table
+    table
+      thead
+        tr
+          th 1
+          th x
+          th 2
+          th ТМ 4.5
+          th ТБ 4.5
+      tbody
+        tr
+          td
+            a(href="#" title="") 2,90
+          td
+            a(href="#" title="") 4,22
+          td
+            a(href="#" title="") 2,28
+          td
+            a(href="#" title="") 2,355
+          td
+            a(href="#" title="") 1,65
+
+  a(href="#" title="").comming-matches__go Перейти к матчу

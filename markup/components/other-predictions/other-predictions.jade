@@ -1,0 +1,15 @@
+include ../prediction-item/prediction-item
+
+mixin other-predictions(data)
+  .other-predictions
+    .other-predictions__title Другие прогнозы
+
+    .other-predictions__list
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/1.jpg', title: '«Вольфсбург» – «Штутгарт»: прогноз'};
+      +prediction-item(data)._inside
+
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/2.jpg', title: '«Вольфсбург» – «Штутгарт»: прогноз'};
+      +prediction-item(data)._inside
+
+      - var data = {imageSrc: '%=static=%images/assets/prediction-item/3.jpg', title: '«Вольфсбург» – «Штутгарт»: прогноз'};
+      +prediction-item(data)._inside

@@ -1,0 +1,94 @@
+.prediction-article {
+  &__body {
+     > img,
+    p > img {
+      width: 100%;
+    }
+    p {
+      font-size: rem-calc(14);
+      line-height: rem-calc(21);
+
+      color: $black;
+    }
+  }
+}
+
+.prediction-article-meta {
+  font-size: rem-calc(14);
+
+  display: flex;
+
+  margin-bottom: 30px;
+
+  align-items: center;
+  justify-content: space-between;
+  &__left {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__date {
+    position: relative;
+
+    margin-right: 30px;
+    padding-left: 18px;
+
+    color: #627082;
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: "";
+
+      @include bg($date);
+      @include vertical-center;
+    }
+  }
+  &__views {
+    position: relative;
+
+    margin-right: 30px;
+    padding-left: 18px;
+
+    color: #627082;
+
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: "";
+
+      @include bg($views);
+      @include vertical-center;
+    }
+  }
+  &__start {
+    position: relative;
+
+    margin-right: 30px;
+    padding-left: 18px;
+
+    color: #627082;
+
+    span {
+      font-family: $Semibold;
+
+      color: $orange;
+    }
+    &:before {
+      position: absolute;
+      left: 0;
+
+      content: "";
+
+      @include bg($start);
+      @include vertical-center;
+    }
+  }
+  &__author {
+    font-family: $Semibold;
+
+    color: $green;
+  }
+}

@@ -1,0 +1,34 @@
+include ../match-bets/match-bets
+include ../prediction-inside/prediction-inside
+include ../prediction-calculator/prediction-calculator
+include ../other-predictions/other-predictions
+
+mixin prediction-article(data)
+  .prediction-article
+    .prediction-article-meta
+      .prediction-article-meta__left
+        .prediction-article-meta__date 19.05.2018
+        .prediction-article-meta__views 562
+        .prediction-article-meta__start Начало матча: <span>15.05.2019 19:00</span>
+      .prediction-article-meta__author Андрей Миронов
+
+    .prediction-article__body
+      img(src="%=static=%images/assets/prediction-article/preview.jpg" alt="")
+
+      p Сборную Корею так же можно называть претендентом на титул, но последние игры этой сборной не очень впечатляют. Команда имела проблемы в матче против Бахрейна. Только в дополнительном тайме удалось победить.
+
+      p А сейчас соперник Катар, команда которая так же в последние годы значительно сильно улучшила свою игру. Видно это связано с тем, что следующий чемпионат мира будет проходить именно в этой стране.
+
+      +match-bets-small
+
+      p Катар выиграл все свои 4 матча в этом розыгрыше. Самое главное команда все 4 игры сохранила свои ворота в неприкосновенности. Но сейчас соперник Южная Корея, команда которая имеет классных игроков и они играют в сильнейших чемпионатах. Сон Хен Мин - это главная звезда этой сборной. Правда игрок Тоттенхэма еще не совсем влился в игры Кубка.
+
+      p Я думаю, что за счет слаженной игры, Катар сможет выдержать натиск корейской сборной, которая не показывает сильный футбол.
+
+      p Мне кажется есть логика в ставке на ничью, хотя бы в основное время.
+
+      +prediction-inside
+
+      +prediction-calculator
+
+      +other-predictions

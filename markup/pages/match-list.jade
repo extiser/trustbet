@@ -5,13 +5,17 @@ include ../components/news-list/news-list
 include ../components/match-list/match-list
 include ../components/bookmakers-list/bookmakers-list
 include ../components/about-block/about-block
+include ../components/bookmakers-sidebar/bookmakers-sidebar
+include ../components/comming-matches/comming-matches
 
 block content
   .sided
     .sided__left
       +breadcrumbs
-      h1.title Букмекеры
+      h1.title Матчи
       +match-list-inside
       +about-block
     .sided__right
+      +bookmakers-sidebar
+      +comming-matches
       +news-list
