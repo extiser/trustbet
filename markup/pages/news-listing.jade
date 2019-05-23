@@ -1,0 +1,18 @@
+extend ./layout
+
+include ../components/breadcrumbs/breadcrumbs
+include ../components/news-list/news-list
+include ../components/news-listing/news-listing
+include ../components/bookmakers-sidebar/bookmakers-sidebar
+include ../components/comming-matches/comming-matches
+
+block content
+  .sided
+    .sided__left
+      +breadcrumbs
+      h1.title Новости
+      +news-listing
+    .sided__right
+      +bookmakers-sidebar
+      +comming-matches
+      +news-list

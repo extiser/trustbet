@@ -1,0 +1,65 @@
+.reviews-bookmakers {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.reviews-bookmakers-item {
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 23%;
+  padding: 0 18px;
+
+  background-color: #f3f3f3;
+  &__image {
+    display: flex;
+
+    width: 100%;
+    height: 96px;
+
+    align-items: center;
+    justify-content: center;
+  }
+  &__bottom {
+    display: flex;
+
+    padding: 15px 0;
+
+    border-top: 1px dashed #d5d5d5;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__more {
+    @extend .button;
+    @extend .button._solid-black;
+  }
+  &__review {
+    font-size: rem-calc(14);
+
+    position: relative;
+
+    padding-left: 20px;
+
+    color: $black;
+    &:before {
+      left: 0;
+
+      content: "";
+
+      @include vertical-center;
+    }
+    &._red {
+      &:before {
+        @include bg($negative);
+      }
+    }
+    &._green {
+      &:before {
+        @include bg($positive);
+      }
+    }
+  }
+}

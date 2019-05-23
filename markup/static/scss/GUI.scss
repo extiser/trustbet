@@ -25,6 +25,12 @@
   }
 }
 
+.title-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .title {
   &._h2 {
     font-family: $Bold;
@@ -106,6 +112,14 @@ table {
     &:hover {
       color: $white;
       background: $blue;
+    }
+  }
+  &._orange {
+    color: $white;
+    background: $orange;
+    padding: 10px 30px;
+    &:hover {
+      background: $orange + #111;
     }
   }
 }

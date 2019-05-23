@@ -1,0 +1,176 @@
+.last-reviews {
+  &__title {
+    @extend .title;
+    @extend .title._h2;
+  }
+}
+
+.last-reviews-item {
+  margin-top: 20px;
+  display: flex;
+
+  padding: 30px;
+
+  align-items: stretch;
+  justify-content: space-between;
+  &__column {
+    width: 50%;
+    &:first-child {
+      padding-right: 30px;
+
+      border-right: 1px dashed #ddcbcc;
+    }
+    &:last-child {
+      padding-left: 30px;
+    }
+  }
+  &._red {
+    background-color: #fce7e8;
+  }
+  &._green {
+    background-color: #f0f6ed;
+  }
+  &__review {
+    font-family: $Semibold;
+    font-size: rem-calc(16);
+
+    position: relative;
+
+    padding-left: 25px;
+
+    text-transform: uppercase;
+    &:before {
+      left: 0;
+
+      content: "";
+
+      @include vertical-center;
+    }
+    &._red {
+      color: #e02b34;
+      &:before {
+        @include bg($negative);
+      }
+    }
+    &._green {
+      color: $green;
+      &:before {
+        @include bg($positive);
+      }
+    }
+  }
+  &__text {
+    font-size: rem-calc(14);
+    line-height: rem-calc(22);
+
+    margin: 25px 0;
+  }
+  &__group {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__subtitle {
+    font-size: rem-calc(14);
+
+    text-transform: uppercase;
+
+    color: #7e7e7e;
+  }
+  &__plus {
+    font-family: $Italic;
+    font-size: rem-calc(14);
+
+    position: relative;
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 26px;
+
+    color: #010101;
+    &:before {
+      left: 0;
+
+      content: "";
+
+      @include bg($review-plus);
+      @include vertical-center;
+    }
+  }
+  &__minus {
+    font-family: $Italic;
+    font-size: rem-calc(14);
+
+    position: relative;
+
+    margin-bottom: 30px;
+    padding-left: 26px;
+
+    color: #010101;
+    &:before {
+      left: 0;
+
+      content: "";
+
+      @include bg($review-minus);
+      @include vertical-center;
+    }
+  }
+  &__comment {
+    font-size: rem-calc(14);
+
+    position: relative;
+
+    padding-left: 24px;
+
+    text-transform: uppercase;
+
+    color: #7e7e7e;
+    strong {
+      font-family: $Semibold;
+
+      color: #202b3b;
+    }
+    &:before {
+      left: 0;
+
+      content: "";
+
+      @include bg($reviews);
+      @include vertical-center;
+    }
+  }
+  &__answer {
+    @extend .button;
+    @extend .button._solid-black;
+  }
+}
+
+.last-reviews-item-author {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+  &__avatar {
+    margin-right: 10px;
+    img {
+      display: block;
+
+      border-radius: 50%;
+    }
+  }
+  &__name {
+    font-family: $Semibold;
+    font-size: rem-calc(14);
+
+    margin-bottom: 4px;
+
+    color: #627082;
+  }
+  &__date {
+    font-size: rem-calc(14);
+
+    color: #7e7e7e;
+  }
+}

@@ -1,0 +1,16 @@
+extend ./layout
+
+include ../components/breadcrumbs/breadcrumbs
+include ../components/reviews-list/reviews-list
+
+
+block content
+  .sided
+    .sided__center
+      +breadcrumbs
+      .title-group
+        h1.title Отзывы. Вариант 1
+
+        a(href="#" title="").button._orange Оставить отзыв
+
+      +reviews-list

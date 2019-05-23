@@ -61,6 +61,9 @@ $('.match-info-nav__item').on('click touchstart', function (e) {
 
 
 
+
+
+
 $('.timezone-select__visible').on('click touchstart', function (e) {
   e.preventDefault();
   $(this).toggleClass('_active');

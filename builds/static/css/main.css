@@ -394,7 +394,19 @@ template {
   background-color: #e2c113;
 }
 
-.title._h2, .bookmakers-reviews__title, .comming-matches__title, .news-list__title, .other-predictions__title, .prediction-calculator__title, .prediction-inside__title, .prediction-list__title, .school-list__title {
+.title-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title._h2, .bookmakers-reviews__title, .comming-matches__title, .news-list__title, .other-predictions__title, .prediction-calculator__title, .prediction-inside__title, .prediction-list__title, .last-reviews__title, .school-list__title {
   font-family: "OpenSans-Bold";
   font-size: 1rem;
   margin-top: 0;
@@ -403,7 +415,7 @@ template {
   color: #202b3b;
 }
 
-.title span {
+.title span, .last-reviews__title span {
   color: #5c87ae;
 }
 
@@ -442,7 +454,7 @@ table {
   border: 1px solid #778495;
 }
 
-.button, .bonus-list-item__button, .bonus-top-item__button, .bookmaker-rating-item__links a, .bookmakers-list-item__link, .comming-matches__go, .prediction-calculator-item__button, .prediction-inside-verdict__go, .user-bets-set__submit button,
+.button, .bonus-list-item__button, .bonus-top-item__button, .bookmaker-rating-item__links a, .bookmakers-list-item__link, .comming-matches__go, .prediction-calculator-item__button, .prediction-inside-verdict__go, .last-reviews-item__answer, .reviews-bookmakers-item__more, .user-bets-set__submit button,
 .user-bets-set__submit input[type="submit"], .user-settings__update-photo, .user-settings__submit {
   font-size: 0.875rem;
   display: inline-block;
@@ -455,27 +467,39 @@ table {
   transition: all 0.4s ease-out;
 }
 
-.button._green, .bonus-list-item__button, .bonus-top-item__button, .bookmaker-rating-item__links a._green, .bookmaker-rating-item__links._bonus a, ._green.bookmakers-list-item__link, .bookmakers-list-item__link._external, .comming-matches__go, .prediction-calculator-item__button, ._green.prediction-inside-verdict__go, .user-bets-set__submit button,
+.button._green, .bonus-list-item__button, .bonus-top-item__button, .bookmaker-rating-item__links a._green, .bookmaker-rating-item__links._bonus a, ._green.bookmakers-list-item__link, .bookmakers-list-item__link._external, .comming-matches__go, .prediction-calculator-item__button, ._green.prediction-inside-verdict__go, ._green.last-reviews-item__answer, ._green.reviews-bookmakers-item__more, .user-bets-set__submit button,
 .user-bets-set__submit input[type="submit"], ._green.user-settings__update-photo, .user-settings__submit {
   color: #fff;
   background: #69aa51;
 }
 
-.button._green:hover, .bonus-list-item__button:hover, .bonus-top-item__button:hover, .bookmaker-rating-item__links a._green:hover, .bookmaker-rating-item__links._bonus a:hover, ._green.bookmakers-list-item__link:hover, .bookmakers-list-item__link._external:hover, .comming-matches__go:hover, .prediction-calculator-item__button:hover, ._green.prediction-inside-verdict__go:hover, .user-bets-set__submit button:hover,
+.button._green:hover, .bonus-list-item__button:hover, .bonus-top-item__button:hover, .bookmaker-rating-item__links a._green:hover, .bookmaker-rating-item__links._bonus a:hover, ._green.bookmakers-list-item__link:hover, .bookmakers-list-item__link._external:hover, .comming-matches__go:hover, .prediction-calculator-item__button:hover, ._green.prediction-inside-verdict__go:hover, ._green.last-reviews-item__answer:hover, ._green.reviews-bookmakers-item__more:hover, .user-bets-set__submit button:hover,
 .user-bets-set__submit input:hover[type="submit"], ._green.user-settings__update-photo:hover, .user-settings__submit:hover {
   background: #7abb62;
 }
 
-.button._solid-black, ._solid-black.bonus-list-item__button, ._solid-black.bonus-top-item__button, .bookmaker-rating-item__links a._solid-black, .bookmaker-rating-item__links._review a, ._solid-black.bookmakers-list-item__link, .bookmakers-list-item__link._review, ._solid-black.comming-matches__go, ._solid-black.prediction-calculator-item__button, .prediction-inside-verdict__go, .user-bets-set__submit button._solid-black,
+.button._solid-black, ._solid-black.bonus-list-item__button, ._solid-black.bonus-top-item__button, .bookmaker-rating-item__links a._solid-black, .bookmaker-rating-item__links._review a, ._solid-black.bookmakers-list-item__link, .bookmakers-list-item__link._review, ._solid-black.comming-matches__go, ._solid-black.prediction-calculator-item__button, .prediction-inside-verdict__go, .last-reviews-item__answer, .reviews-bookmakers-item__more, .user-bets-set__submit button._solid-black,
 .user-bets-set__submit input._solid-black[type="submit"], .user-settings__update-photo, ._solid-black.user-settings__submit {
   color: #000;
   border: 1px solid rgba(32, 43, 59, 0.5);
 }
 
-.button._solid-black:hover, ._solid-black.bonus-list-item__button:hover, ._solid-black.bonus-top-item__button:hover, .bookmaker-rating-item__links a._solid-black:hover, .bookmaker-rating-item__links._review a:hover, ._solid-black.bookmakers-list-item__link:hover, .bookmakers-list-item__link._review:hover, ._solid-black.comming-matches__go:hover, ._solid-black.prediction-calculator-item__button:hover, .prediction-inside-verdict__go:hover, .user-bets-set__submit button._solid-black:hover,
+.button._solid-black:hover, ._solid-black.bonus-list-item__button:hover, ._solid-black.bonus-top-item__button:hover, .bookmaker-rating-item__links a._solid-black:hover, .bookmaker-rating-item__links._review a:hover, ._solid-black.bookmakers-list-item__link:hover, .bookmakers-list-item__link._review:hover, ._solid-black.comming-matches__go:hover, ._solid-black.prediction-calculator-item__button:hover, .prediction-inside-verdict__go:hover, .last-reviews-item__answer:hover, .reviews-bookmakers-item__more:hover, .user-bets-set__submit button._solid-black:hover,
 .user-bets-set__submit input._solid-black:hover[type="submit"], .user-settings__update-photo:hover, ._solid-black.user-settings__submit:hover {
   color: #fff;
   background: #202b3b;
+}
+
+.button._orange, ._orange.bonus-list-item__button, ._orange.bonus-top-item__button, .bookmaker-rating-item__links a._orange, ._orange.bookmakers-list-item__link, ._orange.comming-matches__go, ._orange.prediction-calculator-item__button, ._orange.prediction-inside-verdict__go, ._orange.last-reviews-item__answer, ._orange.reviews-bookmakers-item__more, .user-bets-set__submit button._orange,
+.user-bets-set__submit input._orange[type="submit"], ._orange.user-settings__update-photo, ._orange.user-settings__submit {
+  color: #fff;
+  background: #e39524;
+  padding: 10px 30px;
+}
+
+.button._orange:hover, ._orange.bonus-list-item__button:hover, ._orange.bonus-top-item__button:hover, .bookmaker-rating-item__links a._orange:hover, ._orange.bookmakers-list-item__link:hover, ._orange.comming-matches__go:hover, ._orange.prediction-calculator-item__button:hover, ._orange.prediction-inside-verdict__go:hover, ._orange.last-reviews-item__answer:hover, ._orange.reviews-bookmakers-item__more:hover, .user-bets-set__submit button._orange:hover,
+.user-bets-set__submit input._orange:hover[type="submit"], ._orange.user-settings__update-photo:hover, ._orange.user-settings__submit:hover {
+  background: #f4a635;
 }
 
 .load-more, .prediction-list__more, .user-listing__more {
@@ -968,6 +992,7 @@ body {
 
 .bookmakers-news {
   padding-top: 20px;
+  margin-bottom: 40px;
 }
 
 .bookmakers-reviews {
@@ -3263,6 +3288,56 @@ body {
   background-repeat: no-repeat;
 }
 
+.news-listing-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px dashed #e0e0e0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.news-listing-item__image {
+  width: 100%;
+  max-width: 212px;
+  margin-right: 20px;
+}
+
+.news-listing-item__image img {
+  display: block;
+  width: 100%;
+}
+
+.news-listing-item__content {
+  width: 100%;
+  max-width: calc(840px - 232px);
+}
+
+.news-listing-item__title {
+  font-family: "OpenSans-Semibold";
+  font-size: 1.25rem;
+  line-height: 2rem;
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.news-listing-item__title:hover {
+  text-decoration: underline;
+}
+
+.news-listing-item__caption {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
 .other-predictions {
   margin-top: 40px;
   margin-bottom: 90px;
@@ -3707,6 +3782,304 @@ body {
 
 .prediction-list__more {
   margin-top: 0;
+}
+
+.last-reviews-item {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.last-reviews-item__column {
+  width: 50%;
+}
+
+.last-reviews-item__column:first-child {
+  padding-right: 30px;
+  border-right: 1px dashed #ddcbcc;
+}
+
+.last-reviews-item__column:last-child {
+  padding-left: 30px;
+}
+
+.last-reviews-item._red {
+  background-color: #fce7e8;
+}
+
+.last-reviews-item._green {
+  background-color: #f0f6ed;
+}
+
+.last-reviews-item__review {
+  font-family: "OpenSans-Semibold";
+  font-size: 1rem;
+  position: relative;
+  padding-left: 25px;
+  text-transform: uppercase;
+}
+
+.last-reviews-item__review:before {
+  left: 0;
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.last-reviews-item__review._red {
+  color: #e02b34;
+}
+
+.last-reviews-item__review._red:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -195px -92px;
+  width: 16px;
+  height: 17px;
+  background-size: 224px, 162px;
+  background-repeat: no-repeat;
+}
+
+.last-reviews-item__review._green {
+  color: #69aa51;
+}
+
+.last-reviews-item__review._green:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -174px -92px;
+  width: 17px;
+  height: 17px;
+  background-size: 224px, 162px;
+  background-repeat: no-repeat;
+}
+
+.last-reviews-item__text {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  margin: 25px 0;
+}
+
+.last-reviews-item__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.last-reviews-item__subtitle {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #7e7e7e;
+}
+
+.last-reviews-item__plus {
+  font-family: "OpenSans-Italic";
+  font-size: 0.875rem;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-left: 26px;
+  color: #010101;
+}
+
+.last-reviews-item__plus:before {
+  left: 0;
+  content: "";
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -124px -92px;
+  width: 20px;
+  height: 19px;
+  background-size: 224px, 162px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.last-reviews-item__minus {
+  font-family: "OpenSans-Italic";
+  font-size: 0.875rem;
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 26px;
+  color: #010101;
+}
+
+.last-reviews-item__minus:before {
+  left: 0;
+  content: "";
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -100px -92px;
+  width: 20px;
+  height: 19px;
+  background-size: 224px, 162px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.last-reviews-item__comment {
+  font-size: 0.875rem;
+  position: relative;
+  padding-left: 24px;
+  text-transform: uppercase;
+  color: #7e7e7e;
+}
+
+.last-reviews-item__comment strong {
+  font-family: "OpenSans-Semibold";
+  color: #202b3b;
+}
+
+.last-reviews-item__comment:before {
+  left: 0;
+  content: "";
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -123px -117px;
+  width: 16px;
+  height: 13px;
+  background-size: 224px, 162px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.last-reviews-item-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.last-reviews-item-author__avatar {
+  margin-right: 10px;
+}
+
+.last-reviews-item-author__avatar img {
+  display: block;
+  border-radius: 50%;
+}
+
+.last-reviews-item-author__name {
+  font-family: "OpenSans-Semibold";
+  font-size: 0.875rem;
+  margin-bottom: 4px;
+  color: #627082;
+}
+
+.last-reviews-item-author__date {
+  font-size: 0.875rem;
+  color: #7e7e7e;
+}
+
+.reviews-bookmakers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.reviews-bookmakers-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 23%;
+  padding: 0 18px;
+  background-color: #f3f3f3;
+}
+
+.reviews-bookmakers-item__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 96px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews-bookmakers-item__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+  border-top: 1px dashed #d5d5d5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews-bookmakers-item__review {
+  font-size: 0.875rem;
+  position: relative;
+  padding-left: 20px;
+  color: #000;
+}
+
+.reviews-bookmakers-item__review:before {
+  left: 0;
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.reviews-bookmakers-item__review._red:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -195px -92px;
+  width: 16px;
+  height: 17px;
+  background-size: 224px, 162px;
+  background-repeat: no-repeat;
+}
+
+.reviews-bookmakers-item__review._green:before {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: -174px -92px;
+  width: 17px;
+  height: 17px;
+  background-size: 224px, 162px;
+  background-repeat: no-repeat;
 }
 
 .school-bottom {
